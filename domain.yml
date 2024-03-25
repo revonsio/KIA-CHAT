@@ -2,32 +2,2158 @@ version: "3.1"
 
 intents:
   - greet
-  - goodbye
-  - affirm
-  - deny
-  - mood_great
-  - mood_unhappy
+  - pamit
+  - menu_bb
+  - menu_tb
+  - menu_tk
+  - menu_lainnya
+  - laki_laki
+  - perempuan
+  - inform_umur
+  - inform_bb
   - bot_challenge
 
+  # menu tumbuh kembang
+  - stimulus
+  - kpsp
+  - affirm
+  - deny
+  - umur_0hari_3bulan
+  - umur_3_6bulan
+  - umur_6_9bulan
+  - umur_9_12bulan
+  - umur_12_18bulan
+  - umur_18_24bulan
+  - umur_2_3tahun
+  - umur_3_4tahun
+  - umur_4_5tahun
+  - umur_5_6tahun
+  - kpsp_3bulan
+  - kpsp_6bulan
+  - kpsp_9bulan
+  - kpsp_12bulan
+  - kpsp_15bulan
+  - kpsp_18bulan
+  - kpsp_21bulan
+  - kpsp_24bulan
+  - kpsp_30bulan
+  - kpsp_36bulan
+  - kpsp_42bulan
+  - kpsp_48bulan
+  - kpsp_54bulan
+
+  # menu checklist
+  - setuju
+
+  #menu lainnya
+  - manfaat_menyanyikan_lagu
+
+entities:
+  - umur
+  - berat_badan
+  
+
+actions:
+  - action_data_beratbadan
+  - action_feedback_checklistfirst
+  - action_feedback_checklistsecond
+  # - validate_checklistfirst_form
+
+forms:
+  beratbadan_form:
+    required_slots:
+      - jenis_kelamin
+      - umur
+      - berat_badan
+  
+  checklistfirst_form:
+    required_slots:
+      - question11
+      - question12
+      - question13
+      - question14
+      - question15
+      - question16
+      - question17
+      - question18
+      - question19
+      - question110
+
+  checklistsecond_form:
+    required_slots:
+      - question21
+      - question22
+      - question23
+      - question24
+      - question25
+      - question26
+      - question27
+      - question28
+      - question29
+      - question210
+  
+  checklistthird_form:
+    required_slots:
+      - question31
+      - question32
+      - question33
+      - question34
+      - question35
+      - question36
+      - question37
+      - question38
+      - question39
+      - question310
+      - question311
+  
+  checklistfourth_form:
+    required_slots:
+      - question41
+      - question42
+      - question43
+      - question44
+      - question45
+      - question46
+      - question47
+      - question48
+      - question49
+      - question410
+      - question411
+      - question412
+  
+  checklistfifth_form:
+    required_slots:
+      - question51
+      - question52
+      - question53
+      - question54
+      - question55
+      - question56
+      - question57
+      - question58
+  
+  checklistsixth_form:
+    required_slots:
+      - question61
+      - question62
+      - question63
+      - question64
+      - question65
+      - question66
+      - question67
+      - question68
+
+  checklistseventh_form:
+    required_slots:
+      - question71
+      - question72
+      - question73
+      - question74
+      - question75
+      - question76
+      - question77
+      - question78
+      - question79
+
+  checklisteighth_form:
+    required_slots:
+      - question81
+      - question82
+      - question83
+      - question84
+      - question85
+      - question86
+      - question87
+      - question88
+      - question89
+      - question810
+      - question811
+      - question812
+      - question813
+  
+  checklistninth_form:
+    required_slots:
+      - question91
+      - question92
+      - question93
+      - question94
+      - question95
+      - question96
+      - question97
+      - question98
+      - question99
+      - question910
+      - question911
+      - question912
+      - question913
+      - question914
+      - question915
+      - question916
+      - question917
+      - question918
+  
+  checklisttenth_form:
+    required_slots:
+      - question101
+      - question102
+      - question103
+      - question104
+      - question105
+      - question106
+      - question107
+      - question108
+      - question109
+      - question1010
+      - question1011
+      - question1012
+      - question1013
+
 responses:
-  utter_greet:
-  - text: "Hey! How are you?"
-
-  utter_cheer_up:
-  - text: "Here is something to cheer you up:"
-    image: "https://i.imgur.com/nGF1K8f.jpg"
-
-  utter_did_that_help:
-  - text: "Did that help you?"
-
-  utter_happy:
-  - text: "Great, carry on!"
-
-  utter_goodbye:
-  - text: "Bye"
+  utter_ask_user_question:
+  - text: "Halo! Topik apa yang ingin Anda tanyakan? \n"
+    buttons:
+    - title: Berat badan
+      payload: /menu_bb
+    - title: Tinggi badan
+      payload: /menu_tb
+    - title: Tumbuh Kembang
+      payload: /menu_tk
+    - title: Lainnya
+      payload: /menu_lainnya
+  
 
   utter_iamabot:
-  - text: "I am a bot, powered by Rasa."
+  - text: "Halo! Saya adalah KIA CHAT. Saya adalah bot yang akan memberikan informasi terkait perkembangan anak balita, mulai dari lahir hingga usia kurang dari 6 tahun. Topik informasi yang dapat saya berikan kepada Anda meliputi kemandirian, kemampuan berbahsa, motorik kasar, dan motorik halus."
+
+  utter_pamit:
+  - text: "Terima kasih telah menggunakan layanan KIA CHAT, sampai jumpa lagi!"
+
+# TOPIK BERAT BADAN
+  utter_ask_jenis_kelamin:
+  - text: "Apa jenis kelamin anak Anda?"
+
+  utter_ask_umur:
+  - text: "Berapa umur anak Anda saat ini?"
+
+  utter_ask_berat_badan:
+  - text: "Berapa berat badan anak Anda saat ini?"
+
+# TOPIK TUMBUH KEMBANG
+  utter_welcome_menu_tk:
+  - text: "Selamat datang di menu tumbuh kembang anak oleh KIA Chat. Pada bagian ini, saya akan menjawab pertanyaan-pertanyaan Anda seputar tumbuh kembang anak, meliputi: \n"
+    buttons:
+      - title: Stimulus
+        payload: /stimulus
+      - title: KPSP (Kuesioner Pra Skrining Perkembangan)
+        payload: /kpsp
+
+  utter_welcome_menu_tk_checklist:
+  - text: "Baik, pada bagian ini, saya akan memberikan beberapa pertanyaan assessment untuk menguji tumbuh kembang anak Anda dengan menjawab 'Ya' atau 'Tidak'."
+
+  utter_ask_umur_tk:
+  - text: "Berapa umur anak Anda saat ini? \n"
+    buttons:
+    - title: 0 - 3 bulan
+      payload: /umur_0hari_3bulan
+    - title: 3 - 6 bulan
+      payload: /umur_3_6bulan
+    - title: 6 - 9 bulan
+      payload: /umur_6_9bulan
+    - title: 9 - 12 bulan
+      payload: /umur_9_12bulan
+    - title: 12 - 18 bulan
+      payload: /umur_12_18bulan
+    - title: 18 - 24 bulan
+      payload: /umur_18_24bulan
+    - title: 2 - 3 tahun
+      payload: /umur_2_3tahun
+    - title: 3 - 4 bulan
+      payload: /umur_3_4tahun
+    - title: 4 - 5 bulan
+      payload: /umur_4_5tahun
+    - title: 5 - 6 bulan
+      payload: /umur_5_6tahun
+
+  utter_ask_kategori_kpsp:
+  - text: "Pilih Kategori KPSP: \n"
+    buttons:
+    - title: KPSP 3 bulan
+      payload: /kpsp_3bulan
+    - title: KPSP 6 bulan
+      payload: /kpsp_6bulan
+    - title: KPSP 9 bulan
+      payload: /kpsp_9bulan
+    - title: KPSP 12 bulan
+      payload: /kpsp_12bulan
+    - title: KPSP 15 bulan
+      payload: /kpsp_15bulan
+    - title: KPSP 18 bulan
+      payload: /kpsp_18bulan
+    - title: KPSP 21 bulan
+      payload: /kpsp_21bulan
+    - title: KPSP 24 bulan
+      payload: /kpsp_24bulan
+    - title: KPSP 30 bulan
+      payload: /kpsp_30bulan
+    - title: KPSP 36 bulan
+      payload: /kpsp_36bulan
+    - title: KPSP 42 bulan
+      payload: /kpsp_42bulan
+    - title: KPSP 48 bulan
+      payload: /kpsp_48bulan
+    - title: KPSP 54 bulan
+      payload: /kpsp_54bulan
+
+  # TOPIK LAINNYA
+  utter_welcome_menu_lainnya:
+  - text: "Selamat datang di menu pertanyaan umum terkait tumbuh kembang anak oleh KIA Chat. Pada bagian ini, saya akan menjawab pertanyaan-pertanyaan Anda seputar tumbuh kembang anak. Silakan ketik pertanyaan Anda."
+
+  
+slots:
+  jenis_kelamin:
+    type: bool
+    mappings:
+    - type: from_intent
+      intent: laki_laki
+      value: true
+      conditions:
+      - active_loop: beratbadan_form
+        requested_slot: jenis_kelamin
+    - type: from_intent
+      intent: perempuan
+      value: false
+      conditions:
+      - active_loop: beratbadan_form
+        requested_slot: jenis_kelamin
+    influence_conversation: false
+  umur:
+    type: float
+    influence_conversation: false
+    mappings:
+    - type: from_entity
+      entity: umur
+      intent: inform_umur
+  berat_badan:
+    type: float
+    influence_conversation: false
+    mappings:
+    - type: from_entity
+      entity: berat_badan
+      intent: inform_bb
+
+  # Checklist First Slots
+  question11:
+    type: bool
+    mappings:
+    - type: from_intent
+      intent: affirm
+      value: true
+      conditions:
+      - active_loop: checklistfirst_form
+        requested_slot: question11
+    - type: from_intent
+      intent: deny
+      value: false
+      conditions:
+      - active_loop: checklistfirst_form
+        requested_slot: question11
+    influence_conversation: false
+  question12:
+    type: bool
+    mappings:
+    - type: from_intent
+      intent: affirm
+      value: true
+      conditions:
+      - active_loop: checklistfirst_form
+        requested_slot: question12
+    - type: from_intent
+      intent: deny
+      value: false
+      conditions:
+      - active_loop: checklistfirst_form
+        requested_slot: question12
+    influence_conversation: false
+  question13:
+    type: bool
+    mappings:
+    - type: from_intent
+      intent: affirm
+      value: true
+      conditions:
+      - active_loop: checklistfirst_form
+        requested_slot: question13
+    - type: from_intent
+      intent: deny
+      value: false
+      conditions:
+      - active_loop: checklistfirst_form
+        requested_slot: question13
+    influence_conversation: false
+  question14:
+    type: bool
+    mappings:
+    - type: from_intent
+      intent: affirm
+      value: true
+      conditions:
+      - active_loop: checklistfirst_form
+        requested_slot: question14
+    - type: from_intent
+      intent: deny
+      value: false
+      conditions:
+      - active_loop: checklistfirst_form
+        requested_slot: question14
+    influence_conversation: false
+  question15:
+    type: bool
+    mappings:
+    - type: from_intent
+      intent: affirm
+      value: true
+      conditions:
+      - active_loop: checklistfirst_form
+        requested_slot: question15
+    - type: from_intent
+      intent: deny
+      value: false
+      conditions:
+      - active_loop: checklistfirst_form
+        requested_slot: question15
+    influence_conversation: false
+  question16:
+    type: bool
+    mappings:
+    - type: from_intent
+      intent: affirm
+      value: true
+      conditions:
+      - active_loop: checklistfirst_form
+        requested_slot: question16
+    - type: from_intent
+      intent: deny
+      value: false
+      conditions:
+      - active_loop: checklistfirst_form
+        requested_slot: question16
+    influence_conversation: false
+  question17:
+    type: bool
+    mappings:
+    - type: from_intent
+      intent: affirm
+      value: true
+      conditions:
+      - active_loop: checklistfirst_form
+        requested_slot: question17
+    - type: from_intent
+      intent: deny
+      value: false
+      conditions:
+      - active_loop: checklistfirst_form
+        requested_slot: question17
+    influence_conversation: false
+  question18:
+    type: bool
+    mappings:
+    - type: from_intent
+      intent: affirm
+      value: true
+      conditions:
+      - active_loop: checklistfirst_form
+        requested_slot: question18
+    - type: from_intent
+      intent: deny
+      value: false
+      conditions:
+      - active_loop: checklistfirst_form
+        requested_slot: question18
+    influence_conversation: false
+  question19:
+    type: bool
+    mappings:
+    - type: from_intent
+      intent: affirm
+      value: true
+      conditions:
+      - active_loop: checklistfirst_form
+        requested_slot: question19
+    - type: from_intent
+      intent: deny
+      value: false
+      conditions:
+      - active_loop: checklistfirst_form
+        requested_slot: question19
+    influence_conversation: false
+  question110:
+    type: bool
+    mappings:
+    - type: from_intent
+      intent: affirm
+      value: true
+      conditions:
+      - active_loop: checklistfirst_form
+        requested_slot: question110
+    - type: from_intent
+      intent: deny
+      value: false
+      conditions:
+      - active_loop: checklistfirst_form
+        requested_slot: question110
+    influence_conversation: false
+
+  # Checklist Second Slots
+  question21:
+    type: bool
+    mappings:
+    - type: from_intent
+      intent: affirm
+      value: true
+      conditions:
+      - active_loop: checklistsecond_form
+        requested_slot: question21
+    - type: from_intent
+      intent: deny
+      value: false
+      conditions:
+      - active_loop: checklistsecond_form
+        requested_slot: question21
+    influence_conversation: false
+  question22:
+    type: bool
+    mappings:
+    - type: from_intent
+      intent: affirm
+      value: true
+      conditions:
+      - active_loop: checklistsecond_form
+        requested_slot: question22
+    - type: from_intent
+      intent: deny
+      value: false
+      conditions:
+      - active_loop: checklistsecond_form
+        requested_slot: question22
+    influence_conversation: false
+  question23:
+    type: bool
+    mappings:
+    - type: from_intent
+      intent: affirm
+      value: true
+      conditions:
+      - active_loop: checklistsecond_form
+        requested_slot: question23
+    - type: from_intent
+      intent: deny
+      value: false
+      conditions:
+      - active_loop: checklistsecond_form
+        requested_slot: question23
+    influence_conversation: false
+  question24:
+    type: bool
+    mappings:
+    - type: from_intent
+      intent: affirm
+      value: true
+      conditions:
+      - active_loop: checklistsecond_form
+        requested_slot: question24
+    - type: from_intent
+      intent: deny
+      value: false
+      conditions:
+      - active_loop: checklistsecond_form
+        requested_slot: question24
+    influence_conversation: false
+  question25:
+    type: bool
+    mappings:
+    - type: from_intent
+      intent: affirm
+      value: true
+      conditions:
+      - active_loop: checklistsecond_form
+        requested_slot: question25
+    - type: from_intent
+      intent: deny
+      value: false
+      conditions:
+      - active_loop: checklistsecond_form
+        requested_slot: question25
+    influence_conversation: false
+  question26:
+    type: bool
+    mappings:
+    - type: from_intent
+      intent: affirm
+      value: true
+      conditions:
+      - active_loop: checklistsecond_form
+        requested_slot: question26
+    - type: from_intent
+      intent: deny
+      value: false
+      conditions:
+      - active_loop: checklistsecond_form
+        requested_slot: question26
+    influence_conversation: false
+  question27:
+    type: bool
+    mappings:
+    - type: from_intent
+      intent: affirm
+      value: true
+      conditions:
+      - active_loop: checklistsecond_form
+        requested_slot: question27
+    - type: from_intent
+      intent: deny
+      value: false
+      conditions:
+      - active_loop: checklistsecond_form
+        requested_slot: question27
+    influence_conversation: false
+  question28:
+    type: bool
+    mappings:
+    - type: from_intent
+      intent: affirm
+      value: true
+      conditions:
+      - active_loop: checklistsecond_form
+        requested_slot: question28
+    - type: from_intent
+      intent: deny
+      value: false
+      conditions:
+      - active_loop: checklistsecond_form
+        requested_slot: question28
+    influence_conversation: false
+  question29:
+    type: bool
+    mappings:
+    - type: from_intent
+      intent: affirm
+      value: true
+      conditions:
+      - active_loop: checklistsecond_form
+        requested_slot: question29
+    - type: from_intent
+      intent: deny
+      value: false
+      conditions:
+      - active_loop: checklistsecond_form
+        requested_slot: question29
+    influence_conversation: false
+  question210:
+    type: bool
+    mappings:
+    - type: from_intent
+      intent: affirm
+      value: true
+      conditions:
+      - active_loop: checklistsecond_form
+        requested_slot: question210
+    - type: from_intent
+      intent: deny
+      value: false
+      conditions:
+      - active_loop: checklistsecond_form
+        requested_slot: question210
+    influence_conversation: false
+  # Checklist Third Slots
+  question31:
+    type: bool
+    mappings:
+    - type: from_intent
+      intent: affirm
+      value: true
+      conditions:
+      - active_loop: checklistthird_form
+        requested_slot: question31
+    - type: from_intent
+      intent: deny
+      value: false
+      conditions:
+      - active_loop: checklistthird_form
+        requested_slot: question31
+    influence_conversation: false
+  question32:
+    type: bool
+    mappings:
+    - type: from_intent
+      intent: affirm
+      value: true
+      conditions:
+      - active_loop: checklistthird_form
+        requested_slot: question32
+    - type: from_intent
+      intent: deny
+      value: false
+      conditions:
+      - active_loop: checklistthird_form
+        requested_slot: question32
+    influence_conversation: false
+  question33:
+    type: bool
+    mappings:
+    - type: from_intent
+      intent: affirm
+      value: true
+      conditions:
+      - active_loop: checklistthird_form
+        requested_slot: question33
+    - type: from_intent
+      intent: deny
+      value: false
+      conditions:
+      - active_loop: checklistthird_form
+        requested_slot: question33
+    influence_conversation: false
+  question34:
+    type: bool
+    mappings:
+    - type: from_intent
+      intent: affirm
+      value: true
+      conditions:
+      - active_loop: checklistthird_form
+        requested_slot: question34
+    - type: from_intent
+      intent: deny
+      value: false
+      conditions:
+      - active_loop: checklistthird_form
+        requested_slot: question34
+    influence_conversation: false
+  question35:
+    type: bool
+    mappings:
+    - type: from_intent
+      intent: affirm
+      value: true
+      conditions:
+      - active_loop: checklistthird_form
+        requested_slot: question35
+    - type: from_intent
+      intent: deny
+      value: false
+      conditions:
+      - active_loop: checklistthird_form
+        requested_slot: question35
+    influence_conversation: false
+  question36:
+    type: bool
+    mappings:
+    - type: from_intent
+      intent: affirm
+      value: true
+      conditions:
+      - active_loop: checklistthird_form
+        requested_slot: question36
+    - type: from_intent
+      intent: deny
+      value: false
+      conditions:
+      - active_loop: checklistthird_form
+        requested_slot: question36
+    influence_conversation: false
+  question37:
+    type: bool
+    mappings:
+    - type: from_intent
+      intent: affirm
+      value: true
+      conditions:
+      - active_loop: checklistthird_form
+        requested_slot: question37
+    - type: from_intent
+      intent: deny
+      value: false
+      conditions:
+      - active_loop: checklistthird_form
+        requested_slot: question37
+    influence_conversation: false
+  question38:
+    type: bool
+    mappings:
+    - type: from_intent
+      intent: affirm
+      value: true
+      conditions:
+      - active_loop: checklistthird_form
+        requested_slot: question38
+    - type: from_intent
+      intent: deny
+      value: false
+      conditions:
+      - active_loop: checklistthird_form
+        requested_slot: question38
+    influence_conversation: false
+  question39:
+    type: bool
+    mappings:
+    - type: from_intent
+      intent: affirm
+      value: true
+      conditions:
+      - active_loop: checklistthird_form
+        requested_slot: question39
+    - type: from_intent
+      intent: deny
+      value: false
+      conditions:
+      - active_loop: checklistthird_form
+        requested_slot: question39
+    influence_conversation: false
+  question310:
+    type: bool
+    mappings:
+    - type: from_intent
+      intent: affirm
+      value: true
+      conditions:
+      - active_loop: checklistthird_form
+        requested_slot: question310
+    - type: from_intent
+      intent: deny
+      value: false
+      conditions:
+      - active_loop: checklistthird_form
+        requested_slot: question310
+    influence_conversation: false
+  question311:
+    type: bool
+    mappings:
+    - type: from_intent
+      intent: affirm
+      value: true
+      conditions:
+      - active_loop: checklistthird_form
+        requested_slot: question311
+    - type: from_intent
+      intent: deny
+      value: false
+      conditions:
+      - active_loop: checklistthird_form
+        requested_slot: question311
+    influence_conversation: false
+
+  # Checklist Fourth Slots
+  question41:
+    type: bool
+    mappings:
+    - type: from_intent
+      intent: affirm
+      value: true
+      conditions:
+      - active_loop: checklistfourth_form
+        requested_slot: question41
+    - type: from_intent
+      intent: deny
+      value: false
+      conditions:
+      - active_loop: checklistfourth_form
+        requested_slot: question41
+    influence_conversation: false
+  question42:
+    type: bool
+    mappings:
+    - type: from_intent
+      intent: affirm
+      value: true
+      conditions:
+      - active_loop: checklistfourth_form
+        requested_slot: question42
+    - type: from_intent
+      intent: deny
+      value: false
+      conditions:
+      - active_loop: checklistfourth_form
+        requested_slot: question42
+    influence_conversation: false
+  question43:
+    type: bool
+    mappings:
+    - type: from_intent
+      intent: affirm
+      value: true
+      conditions:
+      - active_loop: checklistfourth_form
+        requested_slot: question43
+    - type: from_intent
+      intent: deny
+      value: false
+      conditions:
+      - active_loop: checklistfourth_form
+        requested_slot: question43
+    influence_conversation: false
+  question44:
+    type: bool
+    mappings:
+    - type: from_intent
+      intent: affirm
+      value: true
+      conditions:
+      - active_loop: checklistfourth_form
+        requested_slot: question44
+    - type: from_intent
+      intent: deny
+      value: false
+      conditions:
+      - active_loop: checklistfourth_form
+        requested_slot: question44
+    influence_conversation: false
+  question45:
+    type: bool
+    mappings:
+    - type: from_intent
+      intent: affirm
+      value: true
+      conditions:
+      - active_loop: checklistfourth_form
+        requested_slot: question45
+    - type: from_intent
+      intent: deny
+      value: false
+      conditions:
+      - active_loop: checklistfourth_form
+        requested_slot: question45
+    influence_conversation: false
+  question46:
+    type: bool
+    mappings:
+    - type: from_intent
+      intent: affirm
+      value: true
+      conditions:
+      - active_loop: checklistfourth_form
+        requested_slot: question46
+    - type: from_intent
+      intent: deny
+      value: false
+      conditions:
+      - active_loop: checklistfourth_form
+        requested_slot: question46
+    influence_conversation: false
+  question47:
+    type: bool
+    mappings:
+    - type: from_intent
+      intent: affirm
+      value: true
+      conditions:
+      - active_loop: checklistfourth_form
+        requested_slot: question47
+    - type: from_intent
+      intent: deny
+      value: false
+      conditions:
+      - active_loop: checklistfourth_form
+        requested_slot: question47
+    influence_conversation: false
+  question48:
+    type: bool
+    mappings:
+    - type: from_intent
+      intent: affirm
+      value: true
+      conditions:
+      - active_loop: checklistfourth_form
+        requested_slot: question48
+    - type: from_intent
+      intent: deny
+      value: false
+      conditions:
+      - active_loop: checklistfourth_form
+        requested_slot: question48
+    influence_conversation: false
+  question49:
+    type: bool
+    mappings:
+    - type: from_intent
+      intent: affirm
+      value: true
+      conditions:
+      - active_loop: checklistfourth_form
+        requested_slot: question49
+    - type: from_intent
+      intent: deny
+      value: false
+      conditions:
+      - active_loop: checklistfourth_form
+        requested_slot: question49
+    influence_conversation: false
+  question410:
+    type: bool
+    mappings:
+    - type: from_intent
+      intent: affirm
+      value: true
+      conditions:
+      - active_loop: checklistfourth_form
+        requested_slot: question410
+    - type: from_intent
+      intent: deny
+      value: false
+      conditions:
+      - active_loop: checklistfourth_form
+        requested_slot: question410
+    influence_conversation: false
+  question411:
+    type: bool
+    mappings:
+    - type: from_intent
+      intent: affirm
+      value: true
+      conditions:
+      - active_loop: checklistfourth_form
+        requested_slot: question411
+    - type: from_intent
+      intent: deny
+      value: false
+      conditions:
+      - active_loop: checklistfourth_form
+        requested_slot: question411
+    influence_conversation: false
+  question412:
+    type: bool
+    mappings:
+    - type: from_intent
+      intent: affirm
+      value: true
+      conditions:
+      - active_loop: checklistfourth_form
+        requested_slot: question312
+    - type: from_intent
+      intent: deny
+      value: false
+      conditions:
+      - active_loop: checklistfourth_form
+        requested_slot: question312
+    influence_conversation: false
+
+  # Checklist fifth Slots
+  question51:
+    type: bool
+    mappings:
+    - type: from_intent
+      intent: affirm
+      value: true
+      conditions:
+      - active_loop: checklistfifth_form
+        requested_slot: question51
+    - type: from_intent
+      intent: deny
+      value: false
+      conditions:
+      - active_loop: checklistfifth_form
+        requested_slot: question51
+    influence_conversation: false
+  question52:
+    type: bool
+    mappings:
+    - type: from_intent
+      intent: affirm
+      value: true
+      conditions:
+      - active_loop: checklistfifth_form
+        requested_slot: question52
+    - type: from_intent
+      intent: deny
+      value: false
+      conditions:
+      - active_loop: checklistfifth_form
+        requested_slot: question52
+    influence_conversation: false
+  question53:
+    type: bool
+    mappings:
+    - type: from_intent
+      intent: affirm
+      value: true
+      conditions:
+      - active_loop: checklistfifth_form
+        requested_slot: question53
+    - type: from_intent
+      intent: deny
+      value: false
+      conditions:
+      - active_loop: checklistfifth_form
+        requested_slot: question53
+    influence_conversation: false
+  question54:
+    type: bool
+    mappings:
+    - type: from_intent
+      intent: affirm
+      value: true
+      conditions:
+      - active_loop: checklistfifth_form
+        requested_slot: question54
+    - type: from_intent
+      intent: deny
+      value: false
+      conditions:
+      - active_loop: checklistfifth_form
+        requested_slot: question54
+    influence_conversation: false
+  question55:
+    type: bool
+    mappings:
+    - type: from_intent
+      intent: affirm
+      value: true
+      conditions:
+      - active_loop: checklistfifth_form
+        requested_slot: question55
+    - type: from_intent
+      intent: deny
+      value: false
+      conditions:
+      - active_loop: checklistfifth_form
+        requested_slot: question55
+    influence_conversation: false
+  question56:
+    type: bool
+    mappings:
+    - type: from_intent
+      intent: affirm
+      value: true
+      conditions:
+      - active_loop: checklistfifth_form
+        requested_slot: question56
+    - type: from_intent
+      intent: deny
+      value: false
+      conditions:
+      - active_loop: checklistfifth_form
+        requested_slot: question56
+    influence_conversation: false
+  question57:
+    type: bool
+    mappings:
+    - type: from_intent
+      intent: affirm
+      value: true
+      conditions:
+      - active_loop: checklistfifth_form
+        requested_slot: question57
+    - type: from_intent
+      intent: deny
+      value: false
+      conditions:
+      - active_loop: checklistfifth_form
+        requested_slot: question57
+    influence_conversation: false
+  question58:
+    type: bool
+    mappings:
+    - type: from_intent
+      intent: affirm
+      value: true
+      conditions:
+      - active_loop: checklistfifth_form
+        requested_slot: question58
+    - type: from_intent
+      intent: deny
+      value: false
+      conditions:
+      - active_loop: checklistfifth_form
+        requested_slot: question58
+    influence_conversation: false
+
+  # Checklist Sixth Slots
+  question61:
+    type: bool
+    mappings:
+    - type: from_intent
+      intent: affirm
+      value: true
+      conditions:
+      - active_loop: checklistsixth_form
+        requested_slot: question61
+    - type: from_intent
+      intent: deny
+      value: false
+      conditions:
+      - active_loop: checklistsixth_form
+        requested_slot: question61
+    influence_conversation: false
+  question62:
+    type: bool
+    mappings:
+    - type: from_intent
+      intent: affirm
+      value: true
+      conditions:
+      - active_loop: checklistsixth_form
+        requested_slot: question62
+    - type: from_intent
+      intent: deny
+      value: false
+      conditions:
+      - active_loop: checklistsixth_form
+        requested_slot: question62
+    influence_conversation: false
+  question63:
+    type: bool
+    mappings:
+    - type: from_intent
+      intent: affirm
+      value: true
+      conditions:
+      - active_loop: checklistsixth_form
+        requested_slot: question63
+    - type: from_intent
+      intent: deny
+      value: false
+      conditions:
+      - active_loop: checklistsixth_form
+        requested_slot: question63
+    influence_conversation: false
+  question64:
+    type: bool
+    mappings:
+    - type: from_intent
+      intent: affirm
+      value: true
+      conditions:
+      - active_loop: checklistsixth_form
+        requested_slot: question64
+    - type: from_intent
+      intent: deny
+      value: false
+      conditions:
+      - active_loop: checklistsixth_form
+        requested_slot: question64
+    influence_conversation: false
+  question65:
+    type: bool
+    mappings:
+    - type: from_intent
+      intent: affirm
+      value: true
+      conditions:
+      - active_loop: checklistsixth_form
+        requested_slot: question65
+    - type: from_intent
+      intent: deny
+      value: false
+      conditions:
+      - active_loop: checklistsixth_form
+        requested_slot: question65
+    influence_conversation: false
+  question66:
+    type: bool
+    mappings:
+    - type: from_intent
+      intent: affirm
+      value: true
+      conditions:
+      - active_loop: checklistsixth_form
+        requested_slot: question66
+    - type: from_intent
+      intent: deny
+      value: false
+      conditions:
+      - active_loop: checklistsixth_form
+        requested_slot: question66
+    influence_conversation: false
+  question67:
+    type: bool
+    mappings:
+    - type: from_intent
+      intent: affirm
+      value: true
+      conditions:
+      - active_loop: checklistsixth_form
+        requested_slot: question67
+    - type: from_intent
+      intent: deny
+      value: false
+      conditions:
+      - active_loop: checklistsixth_form
+        requested_slot: question6
+    influence_conversation: false
+  question68:
+    type: bool
+    mappings:
+    - type: from_intent
+      intent: affirm
+      value: true
+      conditions:
+      - active_loop: checklistsixth_form
+        requested_slot: question68
+    - type: from_intent
+      intent: deny
+      value: false
+      conditions:
+      - active_loop: checklistsixth_form
+        requested_slot: question68
+    influence_conversation: false
+
+  # Checklist Seventh Slots
+  question71:
+    type: bool
+    mappings:
+    - type: from_intent
+      intent: affirm
+      value: true
+      conditions:
+      - active_loop: checklistseventh_form
+        requested_slot: question71
+    - type: from_intent
+      intent: deny
+      value: false
+      conditions:
+      - active_loop: checklistseventh_form
+        requested_slot: question71
+    influence_conversation: false
+  question72:
+    type: bool
+    mappings:
+    - type: from_intent
+      intent: affirm
+      value: true
+      conditions:
+      - active_loop: checklistseventh_form
+        requested_slot: question72
+    - type: from_intent
+      intent: deny
+      value: false
+      conditions:
+      - active_loop: checklistseventh_form
+        requested_slot: question72
+    influence_conversation: false
+  question73:
+    type: bool
+    mappings:
+    - type: from_intent
+      intent: affirm
+      value: true
+      conditions:
+      - active_loop: checklistseventh_form
+        requested_slot: question73
+    - type: from_intent
+      intent: deny
+      value: false
+      conditions:
+      - active_loop: checklistseventh_form
+        requested_slot: question73
+    influence_conversation: false
+  question74:
+    type: bool
+    mappings:
+    - type: from_intent
+      intent: affirm
+      value: true
+      conditions:
+      - active_loop: checklistseventh_form
+        requested_slot: question74
+    - type: from_intent
+      intent: deny
+      value: false
+      conditions:
+      - active_loop: checklistseventh_form
+        requested_slot: question74
+    influence_conversation: false
+  question75:
+    type: bool
+    mappings:
+    - type: from_intent
+      intent: affirm
+      value: true
+      conditions:
+      - active_loop: checklistseventh_form
+        requested_slot: question75
+    - type: from_intent
+      intent: deny
+      value: false
+      conditions:
+      - active_loop: checklistseventh_form
+        requested_slot: question75
+    influence_conversation: false
+  question76:
+    type: bool
+    mappings:
+    - type: from_intent
+      intent: affirm
+      value: true
+      conditions:
+      - active_loop: checklistseventh_form
+        requested_slot: question76
+    - type: from_intent
+      intent: deny
+      value: false
+      conditions:
+      - active_loop: checklistseventh_form
+        requested_slot: question76
+    influence_conversation: false
+  question77:
+    type: bool
+    mappings:
+    - type: from_intent
+      intent: affirm
+      value: true
+      conditions:
+      - active_loop: checklistseventh_form
+        requested_slot: question77
+    - type: from_intent
+      intent: deny
+      value: false
+      conditions:
+      - active_loop: checklistseventh_form
+        requested_slot: question77
+    influence_conversation: false
+  question78:
+    type: bool
+    mappings:
+    - type: from_intent
+      intent: affirm
+      value: true
+      conditions:
+      - active_loop: checklistseventh_form
+        requested_slot: question78
+    - type: from_intent
+      intent: deny
+      value: false
+      conditions:
+      - active_loop: checklistseventh_form
+        requested_slot: question78
+    influence_conversation: false
+  question79:
+    type: bool
+    mappings:
+    - type: from_intent
+      intent: affirm
+      value: true
+      conditions:
+      - active_loop: checklistseventh_form
+        requested_slot: question79
+    - type: from_intent
+      intent: deny
+      value: false
+      conditions:
+      - active_loop: checklistseventh_form
+        requested_slot: question79
+    influence_conversation: false
+
+  # Checklist Eighth Slots
+  question81:
+    type: bool
+    mappings:
+    - type: from_intent
+      intent: affirm
+      value: true
+      conditions:
+      - active_loop: checklisteighth_form
+        requested_slot: question81
+    - type: from_intent
+      intent: deny
+      value: false
+      conditions:
+      - active_loop: checklisteighth_form
+        requested_slot: question81
+    influence_conversation: false
+  question82:
+    type: bool
+    mappings:
+    - type: from_intent
+      intent: affirm
+      value: true
+      conditions:
+      - active_loop: checklisteighth_form
+        requested_slot: question82
+    - type: from_intent
+      intent: deny
+      value: false
+      conditions:
+      - active_loop: checklisteighth_form
+        requested_slot: question82
+    influence_conversation: false
+  question83:
+    type: bool
+    mappings:
+    - type: from_intent
+      intent: affirm
+      value: true
+      conditions:
+      - active_loop: checklisteighth_form
+        requested_slot: question83
+    - type: from_intent
+      intent: deny
+      value: false
+      conditions:
+      - active_loop: checklisteighth_form
+        requested_slot: question83
+    influence_conversation: false
+  question84:
+    type: bool
+    mappings:
+    - type: from_intent
+      intent: affirm
+      value: true
+      conditions:
+      - active_loop: checklisteighth_form
+        requested_slot: question84
+    - type: from_intent
+      intent: deny
+      value: false
+      conditions:
+      - active_loop: checklisteighth_form
+        requested_slot: question84
+    influence_conversation: false
+  question85:
+    type: bool
+    mappings:
+    - type: from_intent
+      intent: affirm
+      value: true
+      conditions:
+      - active_loop: checklisteighth_form
+        requested_slot: question85
+    - type: from_intent
+      intent: deny
+      value: false
+      conditions:
+      - active_loop: checklisteighth_form
+        requested_slot: question85
+    influence_conversation: false
+  question86:
+    type: bool
+    mappings:
+    - type: from_intent
+      intent: affirm
+      value: true
+      conditions:
+      - active_loop: checklisteighth_form
+        requested_slot: question86
+    - type: from_intent
+      intent: deny
+      value: false
+      conditions:
+      - active_loop: checklisteighth_form
+        requested_slot: question86
+    influence_conversation: false
+  question87:
+    type: bool
+    mappings:
+    - type: from_intent
+      intent: affirm
+      value: true
+      conditions:
+      - active_loop: checklisteighth_form
+        requested_slot: question87
+    - type: from_intent
+      intent: deny
+      value: false
+      conditions:
+      - active_loop: checklisteighth_form
+        requested_slot: question87
+    influence_conversation: false
+  question88:
+    type: bool
+    mappings:
+    - type: from_intent
+      intent: affirm
+      value: true
+      conditions:
+      - active_loop: checklisteighth_form
+        requested_slot: question88
+    - type: from_intent
+      intent: deny
+      value: false
+      conditions:
+      - active_loop: checklisteighth_form
+        requested_slot: question88
+    influence_conversation: false
+  question89:
+    type: bool
+    mappings:
+    - type: from_intent
+      intent: affirm
+      value: true
+      conditions:
+      - active_loop: checklisteighth_form
+        requested_slot: question89
+    - type: from_intent
+      intent: deny
+      value: false
+      conditions:
+      - active_loop: checklisteighth_form
+        requested_slot: question89
+    influence_conversation: false
+  question810:
+    type: bool
+    mappings:
+    - type: from_intent
+      intent: affirm
+      value: true
+      conditions:
+      - active_loop: checklisteighth_form
+        requested_slot: question810
+    - type: from_intent
+      intent: deny
+      value: false
+      conditions:
+      - active_loop: checklisteighth_form
+        requested_slot: question810
+    influence_conversation: false
+  question811:
+    type: bool
+    mappings:
+    - type: from_intent
+      intent: affirm
+      value: true
+      conditions:
+      - active_loop: checklisteighth_form
+        requested_slot: question811
+    - type: from_intent
+      intent: deny
+      value: false
+      conditions:
+      - active_loop: checklisteighth_form
+        requested_slot: question811
+    influence_conversation: false
+  question812:
+    type: bool
+    mappings:
+    - type: from_intent
+      intent: affirm
+      value: true
+      conditions:
+      - active_loop: checklisteighth_form
+        requested_slot: question812
+    - type: from_intent
+      intent: deny
+      value: false
+      conditions:
+      - active_loop: checklisteighth_form
+        requested_slot: question812
+    influence_conversation: false
+  question813:
+    type: bool
+    mappings:
+    - type: from_intent
+      intent: affirm
+      value: true
+      conditions:
+      - active_loop: checklisteighth_form
+        requested_slot: question813
+    - type: from_intent
+      intent: deny
+      value: false
+      conditions:
+      - active_loop: checklisteighth_form
+        requested_slot: question813
+    influence_conversation: false
+
+  # Checklist Ninth Slots
+  question91:
+    type: bool
+    mappings:
+    - type: from_intent
+      intent: affirm
+      value: true
+      conditions:
+      - active_loop: checklistninth_form
+        requested_slot: question91
+    - type: from_intent
+      intent: deny
+      value: false
+      conditions:
+      - active_loop: checklistninth_form
+        requested_slot: question91
+    influence_conversation: false
+  question92:
+    type: bool
+    mappings:
+    - type: from_intent
+      intent: affirm
+      value: true
+      conditions:
+      - active_loop: checklistninth_form
+        requested_slot: question92
+    - type: from_intent
+      intent: deny
+      value: false
+      conditions:
+      - active_loop: checklistninth_form
+        requested_slot: question92
+    influence_conversation: false
+  question93:
+    type: bool
+    mappings:
+    - type: from_intent
+      intent: affirm
+      value: true
+      conditions:
+      - active_loop: checklistninth_form
+        requested_slot: question93
+    - type: from_intent
+      intent: deny
+      value: false
+      conditions:
+      - active_loop: checklistninth_form
+        requested_slot: question93
+    influence_conversation: false
+  question94:
+    type: bool
+    mappings:
+    - type: from_intent
+      intent: affirm
+      value: true
+      conditions:
+      - active_loop: checklistninth_form
+        requested_slot: question94
+    - type: from_intent
+      intent: deny
+      value: false
+      conditions:
+      - active_loop: checklistninth_form
+        requested_slot: question94
+    influence_conversation: false
+  question95:
+    type: bool
+    mappings:
+    - type: from_intent
+      intent: affirm
+      value: true
+      conditions:
+      - active_loop: checklistninth_form
+        requested_slot: question95
+    - type: from_intent
+      intent: deny
+      value: false
+      conditions:
+      - active_loop: checklistninth_form
+        requested_slot: question95
+    influence_conversation: false
+  question96:
+    type: bool
+    mappings:
+    - type: from_intent
+      intent: affirm
+      value: true
+      conditions:
+      - active_loop: checklistninth_form
+        requested_slot: question96
+    - type: from_intent
+      intent: deny
+      value: false
+      conditions:
+      - active_loop: checklistninth_form
+        requested_slot: question96
+    influence_conversation: false
+  question97:
+    type: bool
+    mappings:
+    - type: from_intent
+      intent: affirm
+      value: true
+      conditions:
+      - active_loop: checklistninth_form
+        requested_slot: question97
+    - type: from_intent
+      intent: deny
+      value: false
+      conditions:
+      - active_loop: checklistninth_form
+        requested_slot: question97
+    influence_conversation: false
+  question98:
+    type: bool
+    mappings:
+    - type: from_intent
+      intent: affirm
+      value: true
+      conditions:
+      - active_loop: checklistninth_form
+        requested_slot: question98
+    - type: from_intent
+      intent: deny
+      value: false
+      conditions:
+      - active_loop: checklistninth_form
+        requested_slot: question98
+    influence_conversation: false
+  question99:
+    type: bool
+    mappings:
+    - type: from_intent
+      intent: affirm
+      value: true
+      conditions:
+      - active_loop: checklistninth_form
+        requested_slot: question99
+    - type: from_intent
+      intent: deny
+      value: false
+      conditions:
+      - active_loop: checklistninth_form
+        requested_slot: question99
+    influence_conversation: false
+  question910:
+    type: bool
+    mappings:
+    - type: from_intent
+      intent: affirm
+      value: true
+      conditions:
+      - active_loop: checklistninth_form
+        requested_slot: question910
+    - type: from_intent
+      intent: deny
+      value: false
+      conditions:
+      - active_loop: checklistninth_form
+        requested_slot: question910
+    influence_conversation: false
+  question911:
+    type: bool
+    mappings:
+    - type: from_intent
+      intent: affirm
+      value: true
+      conditions:
+      - active_loop: checklistninth_form
+        requested_slot: question911
+    - type: from_intent
+      intent: deny
+      value: false
+      conditions:
+      - active_loop: checklistninth_form
+        requested_slot: question911
+    influence_conversation: false
+  question912:
+    type: bool
+    mappings:
+    - type: from_intent
+      intent: affirm
+      value: true
+      conditions:
+      - active_loop: checklistninth_form
+        requested_slot: question912
+    - type: from_intent
+      intent: deny
+      value: false
+      conditions:
+      - active_loop: checklistninth_form
+        requested_slot: question912
+    influence_conversation: false
+  question913:
+    type: bool
+    mappings:
+    - type: from_intent
+      intent: affirm
+      value: true
+      conditions:
+      - active_loop: checklistninth_form
+        requested_slot: question913
+    - type: from_intent
+      intent: deny
+      value: false
+      conditions:
+      - active_loop: checklistninth_form
+        requested_slot: question913
+    influence_conversation: false
+  question914:
+    type: bool
+    mappings:
+    - type: from_intent
+      intent: affirm
+      value: true
+      conditions:
+      - active_loop: checklistninth_form
+        requested_slot: question914
+    - type: from_intent
+      intent: deny
+      value: false
+      conditions:
+      - active_loop: checklistninth_form
+        requested_slot: question914
+    influence_conversation: false
+  question915:
+    type: bool
+    mappings:
+    - type: from_intent
+      intent: affirm
+      value: true
+      conditions:
+      - active_loop: checklistninth_form
+        requested_slot: question915
+    - type: from_intent
+      intent: deny
+      value: false
+      conditions:
+      - active_loop: checklistninth_form
+        requested_slot: question915
+    influence_conversation: false
+  question916:
+    type: bool
+    mappings:
+    - type: from_intent
+      intent: affirm
+      value: true
+      conditions:
+      - active_loop: checklistninth_form
+        requested_slot: question916
+    - type: from_intent
+      intent: deny
+      value: false
+      conditions:
+      - active_loop: checklistninth_form
+        requested_slot: question916
+    influence_conversation: false
+  question917:
+    type: bool
+    mappings:
+    - type: from_intent
+      intent: affirm
+      value: true
+      conditions:
+      - active_loop: checklistninth_form
+        requested_slot: question917
+    - type: from_intent
+      intent: deny
+      value: false
+      conditions:
+      - active_loop: checklistninth_form
+        requested_slot: question917
+    influence_conversation: false
+  question918:
+    type: bool
+    mappings:
+    - type: from_intent
+      intent: affirm
+      value: true
+      conditions:
+      - active_loop: checklistninth_form
+        requested_slot: question918
+    - type: from_intent
+      intent: deny
+      value: false
+      conditions:
+      - active_loop: checklistninth_form
+        requested_slot: question918
+    influence_conversation: false
+
+  # Checklist Tent Slots
+  question101:
+    type: bool
+    mappings:
+    - type: from_intent
+      intent: affirm
+      value: true
+      conditions:
+      - active_loop: checklisttenth_form
+        requested_slot: question101
+    - type: from_intent
+      intent: deny
+      value: false
+      conditions:
+      - active_loop: checklisttenth_form
+        requested_slot: question101
+    influence_conversation: false
+  question102:
+    type: bool
+    mappings:
+    - type: from_intent
+      intent: affirm
+      value: true
+      conditions:
+      - active_loop: checklisttenth_form
+        requested_slot: question102
+    - type: from_intent
+      intent: deny
+      value: false
+      conditions:
+      - active_loop: checklisttenth_form
+        requested_slot: question102
+    influence_conversation: false
+  question103:
+    type: bool
+    mappings:
+    - type: from_intent
+      intent: affirm
+      value: true
+      conditions:
+      - active_loop: checklisttenth_form
+        requested_slot: question103
+    - type: from_intent
+      intent: deny
+      value: false
+      conditions:
+      - active_loop: checklisttenth_form
+        requested_slot: question103
+    influence_conversation: false
+  question104:
+    type: bool
+    mappings:
+    - type: from_intent
+      intent: affirm
+      value: true
+      conditions:
+      - active_loop: checklisttenth_form
+        requested_slot: question104
+    - type: from_intent
+      intent: deny
+      value: false
+      conditions:
+      - active_loop: checklisttenth_form
+        requested_slot: question104
+    influence_conversation: false
+  question105:
+    type: bool
+    mappings:
+    - type: from_intent
+      intent: affirm
+      value: true
+      conditions:
+      - active_loop: checklisttenth_form
+        requested_slot: question105
+    - type: from_intent
+      intent: deny
+      value: false
+      conditions:
+      - active_loop: checklisttenth_form
+        requested_slot: question105
+    influence_conversation: false
+  question106:
+    type: bool
+    mappings:
+    - type: from_intent
+      intent: affirm
+      value: true
+      conditions:
+      - active_loop: checklisttenth_form
+        requested_slot: question106
+    - type: from_intent
+      intent: deny
+      value: false
+      conditions:
+      - active_loop: checklisttenth_form
+        requested_slot: question106
+    influence_conversation: false
+  question107:
+    type: bool
+    mappings:
+    - type: from_intent
+      intent: affirm
+      value: true
+      conditions:
+      - active_loop: checklisttenth_form
+        requested_slot: question107
+    - type: from_intent
+      intent: deny
+      value: false
+      conditions:
+      - active_loop: checklisttenth_form
+        requested_slot: question107
+    influence_conversation: false
+  question108:
+    type: bool
+    mappings:
+    - type: from_intent
+      intent: affirm
+      value: true
+      conditions:
+      - active_loop: checklisttenth_form
+        requested_slot: question108
+    - type: from_intent
+      intent: deny
+      value: false
+      conditions:
+      - active_loop: checklisttenth_form
+        requested_slot: question108
+    influence_conversation: false
+  question109:
+    type: bool
+    mappings:
+    - type: from_intent
+      intent: affirm
+      value: true
+      conditions:
+      - active_loop: checklisttenth_form
+        requested_slot: question109
+    - type: from_intent
+      intent: deny
+      value: false
+      conditions:
+      - active_loop: checklisttenth_form
+        requested_slot: question109
+    influence_conversation: false
+  question1010:
+    type: bool
+    mappings:
+    - type: from_intent
+      intent: affirm
+      value: true
+      conditions:
+      - active_loop: checklisttenth_form
+        requested_slot: question1010
+    - type: from_intent
+      intent: deny
+      value: false
+      conditions:
+      - active_loop: checklisttenth_form
+        requested_slot: question1010
+    influence_conversation: false
+  question1011:
+    type: bool
+    mappings:
+    - type: from_intent
+      intent: affirm
+      value: true
+      conditions:
+      - active_loop: checklisttenth_form
+        requested_slot: question1011
+    - type: from_intent
+      intent: deny
+      value: false
+      conditions:
+      - active_loop: checklisttenth_form
+        requested_slot: question1011
+    influence_conversation: false
+  question1012:
+    type: bool
+    mappings:
+    - type: from_intent
+      intent: affirm
+      value: true
+      conditions:
+      - active_loop: checklisttenth_form
+        requested_slot: question1012
+    - type: from_intent
+      intent: deny
+      value: false
+      conditions:
+      - active_loop: checklisttenth_form
+        requested_slot: question1012
+    influence_conversation: false
+  question1013:
+    type: bool
+    mappings:
+    - type: from_intent
+      intent: affirm
+      value: true
+      conditions:
+      - active_loop: checklisttenth_form
+        requested_slot: question1013
+    - type: from_intent
+      intent: deny
+      value: false
+      conditions:
+      - active_loop: checklisttenth_form
+        requested_slot: question1013
+    influence_conversation: false
+  
+
+
 
 session_config:
   session_expiration_time: 60

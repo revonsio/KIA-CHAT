@@ -1,0 +1,52 @@
+responses:
+  utter_ask_question41: 
+  - text: "Bayi bisa mengangkat badannya ke posisi berdiri?"
+
+  utter_ask_question42: 
+  - text: "Bayi belajar berdiri selama 30 detik atau berpegangan di kursi?"
+
+  utter_ask_question43: 
+  - text: "Bayi dapat berjalan dengan dituntun?"
+
+  utter_ask_question44: 
+  - text: "Bayi mengulurkan lengan/ badan untuk meraih mainan yang diinginkan?"
+
+  utter_ask_question45: 
+  - text: "Bayi bisa menggenggam erat pensil?"
+
+  utter_ask_question46: 
+  - text: "Bayi memasukkan benda ke mulut?"
+
+  utter_ask_question47: 
+  - text: "Bayi mengulang menirukan bunyi yang didengar?"
+
+  utter_ask_question48: 
+  - text: "Bayi menyebut 2-3 suku kata yang sama tanpa arti?"
+
+  utter_ask_question49: 
+  - text: "Bayi mengeksplorasi sekitar, ingin tahu, ingin menyentuh apa saja?"
+
+  utter_ask_question410: 
+  - text: "Bayi bereaksi terhadap suara yang perlahan atau bisikan?"
+
+  utter_ask_question411: 
+  - text: "Bayi senang diajak bermain “CILUKBA”?"
+
+  utter_ask_question412: 
+  - text: "Bayi mengenal anggota keluarga, takut pada orang yang belum dikenal?"
+
+  utter_slots_valuefourth:
+  - text: "Berikut Rangkuman Checklist Anda:\n
+            1. Bayi bisa mengangkat badannya ke posisi berdiri? {question41} \n
+            2. Bayi belajar berdiri selama 30 detik atau berpegangan di kursi? {question42} \n
+            3. Bayi dapat berjalan dengan dituntun? {question43} \n
+            4. Bayi mengulurkan lengan/ badan untuk meraih mainan yang diinginkan? {question44} \n
+            5. Bayi bisa menggenggam erat pensil? {question45} \n
+            6. Bayi memasukkan benda ke mulut? {question46} \n
+            7. Bayi mengulang menirukan bunyi yang didengar? {question47} \n
+            8. Bayi menyebut 2-3 suku kata yang sama tanpa arti? {question48} \n
+            9. Bayi mengeksplorasi sekitar, ingin tahu, ingin menyentuh apa saja? {question49} \n
+            10. Bayi bereaksi terhadap suara yang perlahan atau bisikan? {question410} \n
+            11. Bayi senang diajak bermain “CILUKBA”? {question411} \n
+            12. Bayi mengenal anggota keluarga, takut pada orang yang belum dikenal? {question412} \n
+          "

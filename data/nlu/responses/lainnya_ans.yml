@@ -1,0 +1,14 @@
+version: "3.1"
+
+responses:
+  utter_manfaat_menyanyikan_lagu:
+  - text: "Selama beberapa bulan pertama setelah lahir, otak dapat memproses musik di area khusus, yang dimana ini bisa membantu bayi untuk semakin berkembang. Ada beberapa manfaat yang bisa diberikan seperti: \n
+
+  1. Memperkuat ikatan anak dan orang tua, menyanyikan lagu untuk bayi sebelum tidur secara rutin akan membantu mama untuk lebih dekat dengan bayi\n
+  2. Menangkan bayi, dimana nada yang menenangkan dpaat membuat si kecil tertidur\n
+  3. Meningkatkan fungsi kognitifnya karena repetisi lirik akan membantu meningkatkan perkembangan kognitifnya dan meningkatkan keterampilan mendengar\n
+  4. Mengembangkan kemampuan bahasa karena secara tidak langsung bernyanyi dapat membantu bayi untuk mendengarkan dan mempelajari berbagai bahasa dan kosakata.\n
+
+  Kebiasaan bernyanyi bisa dilakukan sejak bayi masih di dalam kandungan, namun manfaat diatas tidak selalu mutlak ya, dimana terutama perkembangan otak belum ada bukti lebih lanjut akan manfaatnya, namun nyanyian tetap memberikan manfaat, pilih lagi yang menangkan dan tidak menganggetkan bayi. Bunda bisa cari referensi tertentu lagu yang cocok untuk bayi di internet. Semoga dapat membantu
+  
+  Sumber: dr. Riza Marlina from Alodokter accessed on 3/7/2024"

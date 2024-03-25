@@ -1,0 +1,56 @@
+responses:
+  utter_ask_question81: 
+  - text: "Anak bisa berdiri 1 kaki 2 detik?"
+
+  utter_ask_question82: 
+  - text: "Anak bisa melompat kedua kaki diangkat?"
+
+  utter_ask_question83: 
+  - text: "Anak bisa mengayuh sepeda roda tiga?"
+
+  utter_ask_question84: 
+  - text: "Anak bisa menggambar garis lurus?"
+
+  utter_ask_question85: 
+  - text: "Anak bisa menumpuk 8 buah kubus?"
+
+  utter_ask_question86: 
+  - text: "Anak bisa mengenal 2-4 warna?"
+
+  utter_ask_question87: 
+  - text: "Anak bisa menyebut nama, umur, tempat?"
+
+  utter_ask_question88: 
+  - text: "Anak bisa mengerti arti kata di atas, di bawah, di depan?"
+
+  utter_ask_question89: 
+  - text: "Anak bisa mendengarkan cerita?"
+
+  utter_ask_question810: 
+  - text: "Anak bisa mencuci dan mengeringkan tangan sendiri?"
+
+  utter_ask_question811: 
+  - text: "Anak bermain bersama teman, mengikuti aturan permainan?"
+
+  utter_ask_question812: 
+  - text: "Anak bisa mengenakan sepatu sendiri?"
+
+  utter_ask_question813: 
+  - text: "Anak bisa mengenakan celana panjang, kemeja, baju?"
+
+  utter_slots_valueeighth:
+  - text: "Berikut Rangkuman Checklist Anda:\n
+            1. Anak bisa berdiri 1 kaki 2 detik? {question81} \n
+            2. Anak bisa melompat kedua kaki diangkat? {question82} \n
+            3. Anak bisa mengayuh sepeda roda tiga? {question83} \n
+            4. Anak bisa menggambar garis lurus? {question84} \n
+            5. Anak bisa menumpuk 8 buah kubus? {question85} \n
+            6. Anak bisa mengenal 2-4 warna? {question86} \n
+            7. Anak bisa menyebut nama, umur, tempat? {question87} \n
+            8. Anak bisa mengerti arti kata di atas, di bawah, di depan? {question88} \n
+            9. Anak bisa mendengarkan cerita? {question89} \n
+            10. Anak bisa mencuci dan mengeringkan tangan sendiri? {question810} \n
+            11. Anak bermain bersama teman, mengikuti aturan permainan? {question811} \n
+            12. Anak bisa mengenakan sepatu sendiri? {question812} \n
+            13. Anak bisa mengenakan celana panjang, kemeja, baju? {question813} \n
+          "

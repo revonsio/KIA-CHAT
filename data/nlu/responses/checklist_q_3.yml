@@ -1,0 +1,50 @@
+version: "3.1"
+
+responses:
+  utter_ask_question31: 
+  - text: "Bayi bisa duduk secara mandiri?"
+
+  utter_ask_question32: 
+  - text: "Bayi belajar berdiri, kedua kakinya menyangga sebagian berat badan?"
+
+  utter_ask_question33: 
+  - text: "Bayi bisa merangkak meraih mainan atau mendekati seseorang?"
+
+  utter_ask_question34: 
+  - text: "Bayi bisa memindahkan benda dari satu tangan ke tangan lainnya?"
+
+  utter_ask_question35: 
+  - text: "Bayi bisa memungut 2 benda, kedua tangan pegang 2 benda pada saat bersamaan?"
+
+  utter_ask_question36: 
+  - text: "Bayi bisa memungut benda sebesar kacang dengan cara meraup?"
+
+  utter_ask_question37: 
+  - text: "Bayi bersuara tanpa arti, mamama, bababa, dadada, tatatata?"
+
+  utter_ask_question38: 
+  - text: "Bayi mencari mainan/benda yang dijatuhkan?"
+
+  utter_ask_question39: 
+  - text: "Bayi bermain tepuk tangan/ciluk ba"
+
+  utter_ask_question310: 
+  - text: "Bayi bergembira dengan melempar benda?"
+
+  utter_ask_question311: 
+  - text: "Bayi makan kue sendiri?"
+
+  utter_slots_valuethird:
+  - text: "Berikut Rangkuman Checklist Anda:\n
+            1. Bayi bisa duduk secara mandiri? {question31}\n
+            2. Bayi belajar berdiri, kedua kakinya menyangga sebagian berat badan? {question32}\n
+            3. Bayi bisa merangkak meraih mainan atau mendekati seseorang? {question33}\n
+            4. Bayi bisa memindahkan benda dari satu tangan ke tangan lainnya? {question34}\n
+            5. Bayi bisa memungut 2 benda, kedua tangan pegang 2 benda pada saat bersamaan? {question35}\n
+            6. Bayi bisa memungut benda sebesar kacang dengan cara meraup? {question36} \n
+            7. Bayi bersuara tanpa arti, mamama, bababa, dadada, tatatata? {question37}\n
+            8. Bayi mencari mainan/benda yang dijatuhkan? {question38} \n
+            9. Bayi bermain tepuk tangan/ciluk ba {question39} \n
+            10. Bayi bergembira dengan melempar benda? {question310} \n
+            11. Bayi makan kue sendiri? {question311} \n"
+  

@@ -1,0 +1,15 @@
+version: "3.1"
+
+stories:
+- story: topik lainnya
+  steps:
+  - checkpoint: ask_user_question
+  - intent: menu_lainnya
+  - action: utter_welcome_menu_lainnya
+  - checkpoint: menu_lainnya
+
+- story: manfaat menyanyikan lagi bagi perkembangan otak bayi
+  steps:
+  - checkpoint: menu_lainnnya
+  - intent: manfaat_menyanyikan_lagu
+  - action: utter_manfaat_menyanyikan_lagu

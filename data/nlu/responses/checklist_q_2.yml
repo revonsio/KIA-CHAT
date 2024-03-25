@@ -1,0 +1,174 @@
+responses:
+
+  utter_ask_question21:
+  - text: "Bayi bisa berbalik dari telungkup ke telentang?"
+  
+  utter_ask_question22:
+  - text: "Bayi bisa mengangkat kepala secara mandiri hingga tegak 90˚?"
+
+  utter_ask_question23:
+  - text: "Bayi bayi bisa mempertahankan posisi kepala tetap tegak dan stabil?"
+
+  utter_ask_question24:
+  - text: "Bayi bisa menggenggam mainan kecil atau mainan bertangkai?"
+
+  utter_ask_question25:
+  - text: "Bayi bisa meraih benda yang ada dalam jangkauannya?"
+
+  utter_ask_question26:
+  - text: "Bayi bisa mengamati tangannya sendiri?"
+
+  utter_ask_question27:
+  - text: "Bayi berusaha memperluas pandangan?"
+
+  utter_ask_question28:
+  - text: "Bayi mengarahkan matanya pada benda-benda kecil?"
+
+  utter_ask_question29:
+  - text: "Bayi mengeluarkan suara gembira bernada tinggi atau memekik"
+
+  utter_ask_question210:
+  - text: "Bayi tersenyum ketika melihat mainan/ gambar yang menarik saat bermain sendiri?"
+
+  utter_slots_valuesecond:
+  - text: "Berikut Rangkuman Checklist Anda:\n
+            1. Bayi bisa berbalik dari telungkup ke telentang? {question21}\n
+            2. Bayi bisa mengangkat kepala secara mandiri hingga tegak 90˚? {question22}\n
+            3. Bayi bisa mempertahankan posisi kepala tetap tegak dan stabil? {question23}\n
+            4. Bayi bisa menggenggam mainan kecil atau mainan bertangkai? {question24}\n
+            5. Bayi bisa meraih benda yang ada dalam jangkauannya? {question25}\n
+            6. Bayi bisa mengamati tangannya sendiri? {question26} \n
+            7. Bayi berusaha memperluas pandangan? {question27}\n
+            8. Bayi mengarahkan matanya pada benda-benda kecil? {question28} \n
+            9. Bayi mengeluarkan suara gembira bernada tinggi atau memekik {question29} \n
+            10. Bayi tersenyum ketika melihat mainan/ gambar yang menarik saat bermain sendiri? {question210} \n
+            "
+  
+  utter_response_question21:
+  - text: "Solusi Pertanyaan Nomor 1:\n
+  Aspek : Motorik Kasar\n
+
+Perkembangan : Berbalik dari telentang ke telungkup dan sebaliknya\n
+
+Stimulasi :\n
+1. Berguling
+2. Menahan kepala tetap tegak\n
+Sumber :\n
+Buku panduan SDIDTK anak oleh Kementerian Kesehatan RI\n
+\n
+  "
+
+  utter_response_question22:
+  - text: "Solusi Pertanyaan Nomor 2:\n"
+
+  utter_response_question23:
+  - text: "Solusi Pertanyaan Nomor 3:\n
+  Aspek : Motorik Kasar\n
+
+Perkembangan : Mempertahankan posisi kepala tetap tegak dan stabil\n
+
+Stimulasi :\n
+1. Mengembangkan kontrol terhadap kepala\n
+Latih bayi agar otot-otot lehernya kuat. Letakkan bayi pada posisi telentang. Pegang kedua pergelangan tangan bayi, tarik bayi perlahan-lahan ke arah anda, hingga badan bayi terangkat ke posisi setengah duduk. Jika bayi belum dapat mengontrol kepalanya (kepala bayi tidak ikut terangkat), jangan lakukan latihan ini. Tunggu sampai otot-otot leher bayi lebih kuat.\n
+
+2. Duduk\n
+Bantu bayi agar bisa duduk sendiri, mula-mula bayi didudukkan di kursi dengan sandaran agar tidak jatuh ke belakang. Ketika bayi dalam posisi duduk , beri mainan kecil ditangannya. Jika bayi belum bisa duduk tegak, pegang badan bayi. Jika bayi bisa duduk tegak, dudukkan bayi di lantai yang beralaskan selimut, tanpa sandaran atau penyangga.\n
+
+Sumber :\n
+Buku panduan SDIDTK anak oleh Kementerian Kesehatan RI\n
+\n
+  "
+
+  utter_response_question24:
+  - text: "Solusi Pertanyaan Nomor 4:\n
+  Aspek : Motorik Halus\n
+
+Perkembangan : Menggenggam benda\n
+
+Stimulasi :\n
+1. Melihat, meraih dan menendang mainan gantung\n
+2. Memperhatikan benda bergerak\n
+3. Melihat benda-benda kecil\n
+4. Meraba dan merasakan berbagai bentuk permukaan\n
+Sumber :\n
+Buku panduan SDIDTK anak oleh Kementerian Kesehatan RI\n
+
+\n
+  "
+
+  utter_response_question25:
+  - text: "Solusi Pertanyaan Nomor 5:\n
+  Aspek : Motorik Halus\n
+
+Perkembangan : Meraih benda yang ada dalam jangkauannya\n
+
+Stimulasi :\n
+Memegang benda dengan kuat dengan meletakkan sebuah mainan kecil yang berbunyi atau berwarna cerah di tangan bayi. Setelah bayi menggenggam mainan tersebut, tarik pelan-pelan untuk melatih bayi memegang benda dengan kuat.\n
+
+Sumber :\n
+Buku panduan SDIDTK anak oleh Kementerian Kesehatan RI\n
+\n
+
+  "
+
+  utter_response_question26:
+  - text: "Solusi Pertanyaan Nomor 6:\n"
+
+  utter_response_question27:
+  - text: "Solusi Pertanyaan Nomor 7:\n"
+
+  utter_response_question28:
+  - text: "Solusi Pertanyaan Nomor 8:\n
+  Aspek : Motorik Halus\n
+
+Perkembangan : Mengarahkan matanya pada benda-benda kecil\n
+
+Stimulasi :\n
+1. Jatuhkan sebuah kancing atau benda kecil lainnya yang berwarna terang di depan anak ke permukaan putih seperti kertas putih dengan jarak yang mudah dijangkau oleh anak\n
+
+2. Gendong anak dengan menghadap kedepan dan bawa ke taman atau halaman rumah\n
+
+Sumber :\n
+Buku panduan SDIDTK anak oleh Kementerian Kesehatan RI\n
+\n
+  "
+
+  utter_response_question29:
+  - text: "Solusi Pertanyaan Nomor 9:\n
+  Aspek : Bicara dan Bahasa\n
+
+Perkembangan : Mengeluarkan suara gembira bernada tinggi atau memekik\n
+
+Stimulasi :\n
+1. Menirukan kata-kata\n
+Ketika berbicara dengan bayi, ulangi beberapa kata berkali-kali dan usahakan agar bayi menirukannya. Yang paling mudah ditirukan oleh bayi adalah kata yang menggunakan huruf vocal dan gerakan bibir. Contohnya: papa, mama, baba.\n
+
+2. Mencari sumber suara\n
+Latih bayi agar menengok ke arah sumber suara. Arahkan mukanya ke arah sumber suara. Mula-mula muka bayi dipegang dan dipalingkan perlahan lahan ke arah sumber suara, atau bayi dibawa mendekati sumber suara.\n
+
+Sumber :\n
+Buku panduan SDIDTK anak oleh Kementerian Kesehatan RI\n
+  \n
+  "
+
+  utter_response_question210:
+  - text: "Solusi Pertanyaan Nomor 10:\n
+  Aspek : Sosialisasi dan Kemandirian\n
+
+Perkembangan : Tersenyum ketika melihat mainan/gambar yang menarik saat bermain sendiri\n
+
+Stimulasi :\n
+1. Bermain 'Cilluk-ba'
+2. Tutup wajah sampai tertutup semua bagian wajah anda dan buka secara tiba-tiba untuk dilihat bayi. Cara lain adalah mengintip bayi dari balik pintu atau tempat tidumya.
+3. Melihat dirinya dikaca\n
+Pada umur ini,bayi senang melihat dirinya di cermin.Bawalah bayi melihat dirinya dicermin yang tidak mudah pecah
+
+4. Berusaha meraih mainan\n
+Letakkan sebuah mainan sedikit diluar jangkauan bayi. Gerak-gerakkan mainan itu didepan bayi sambil bicara kepadanya agar ia berusaha untuk mendapatkan mainan itu.Jangan terlalu lama membiarkan bayi berusaha meraih mainan tersebut, agar anak merasa berhasil.\n
+
+Sumber :\n
+Buku panduan SDIDTK anak oleh Kementerian Kesehatan RI\n
+  \n
+  "
+  
+

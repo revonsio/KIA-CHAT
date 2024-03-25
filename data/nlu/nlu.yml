@@ -1,0 +1,127 @@
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - halo
+    - selamat pagi
+    - selamat siang
+    - selamat malam
+    - hai
+    - hello
+    - hi
+    - apa kabar?
+    - bagaimana kabarmu?
+    - apakah kamu bisa membantu saya?
+    - saya butuh bantuan
+    - saya punya pertanyaan
+
+- intent: pamit
+  examples: |
+    - selamat tinggal
+    - bye
+    - sampai jumpa lagi
+    - terima kasih
+    - sampai ketemu lagi
+    - good bye
+    - senang bertemu lagi
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+    - jelaskan layanan anda
+    - siapakah anda
+    - perkenalkan diri anda
+    - apa saja yang bisa anda jawab
+    - info layanan
+
+- intent: menu_bb
+  examples: |
+    - 1
+    - a
+    - a.
+    - bb
+    - berat badan
+
+- intent: menu_tb
+  examples: |
+    - 2
+    - b
+    - b.
+    - tb
+    - tinggi badan
+
+- intent: menu_tk
+  examples: |
+    - 3
+    - c
+    - c.
+    - tk
+    - tumbuh kembang
+
+- intent: menu_lainnya
+  examples: |
+    - 4
+    - d
+    - d.
+    - lainnya
+    - lain-lain
+    - pertanyaan lainnya
+
+- intent: laki_laki
+  examples: |
+    - laki-laki
+    - cowok
+    - pria
+
+- intent: perempuan
+  examples: |
+    - perempuan
+    - cewek
+    - wanita
+
+- intent: setuju
+  examples: |
+    - setuju
+    - lanjut
+
+- intent: affirm
+  examples: |
+    - ya
+    - benar
+    - betul
+    - data sudah benar
+    - konfirmasi
+    - yes
+
+- intent: deny
+  examples: |
+    - tidak bisa
+    - tidak
+    - nggak
+    - gak
+    - belum
+    - no
+    - salah
+
+
+- intent: inform_umur
+  examples: |
+    - umur 1 tahun
+    - 1 bulan
+    - 0,5 tahun
+    - 2 tahun
+    - 3 bulan
+
+- intent: inform_bb
+  examples: |
+    - berat badan 1 kg
+    - 1 kilogram
+    - 2 kilo
+    - 0 kg
+    - 5 kilogram
+
+    

@@ -1,0 +1,40 @@
+responses:
+  utter_ask_question71: 
+  - text: "Anak bisa jalan naik tangga sendiri?"
+
+  utter_ask_question72: 
+  - text: "Anak bisa bermain dan menendang bola kecil?"
+
+  utter_ask_question73: 
+  - text: "Anak bisa mencoret-coret pensil pada kertas?"
+
+  utter_ask_question74: 
+  - text: "Anak bisa bicara dengan baik, menggunakan 2 kata?"
+
+  utter_ask_question75: 
+  - text: "Anak bisa menunjuk 1 atau lebih bagian tubuhnya ketika diminta?"
+
+  utter_ask_question76: 
+  - text: "Anak bisa melihat gambar dan dapat menyebut dengan benar nama 2 benda atau lebih?"
+
+  utter_ask_question77: 
+  - text: "Anak bisa membantu memungut mainannya sendiri atau membantu mengangkat piring jika diminta?"
+
+  utter_ask_question78: 
+  - text: "Anak bisa makan nasi sendiri tanpa banyak tumpah?"
+
+  utter_ask_question79: 
+  - text: "Anak bisa melepas pakaiannya sendiri?"
+
+  utter_slots_valueseventh:
+  - text: "Berikut Rangkuman Checklist Anda:\n
+            1. Anak bisa jalan naik tangga sendiri? {question71} \n
+            2. Anak bisa bermain dan menendang bola kecil? {question72} \n
+            3. Anak bisa mencoret-coret pensil pada kertas? {question73} \n
+            4. Anak bisa bicara dengan baik, menggunakan 2 kata? {question74} \n
+            5. Anak bisa menunjuk 1 atau lebih bagian tubuhnya ketika diminta? {question75} \n
+            6. Anak bisa melihat gambar dan dapat menyebut dengan benar nama 2 benda atau lebih? {question76} \n
+            7. Anak bisa membantu memungut mainannya sendiri atau membantu mengangkat piring jika diminta? {question77} \n
+            8. Anak bisa makan nasi sendiri tanpa banyak tumpah? {question78} \n
+            9. Anak bisa melepas pakaiannya sendiri? {question79} \n
+          "

@@ -1,0 +1,186 @@
+version: "3.1"
+
+nlu:
+# intent topik
+- intent: stimulus
+  examples: |
+    - stimulus
+    - saya ingin bertanya terkait stimulus untuk anak
+    - stimulus balita
+    - contoh stimulus yang tepat untuk anak
+    - apa yang harus saya lakukan untuk melatih anak saya
+    - kegiatan apa yang cocok untuk membantu perkembangan anak 
+    - simulus yang berhubungan dengan tumbuh kembang anak
+    - bagaimana cara melatih tumbuh kembang 
+
+- intent: kpsp
+  examples: |
+    - kpsp
+    - ceklis
+    - checklist
+    - kuesioner
+    - kuisioner
+    - cek
+
+# intent umur
+- intent: umur_0hari_3bulan
+  examples: |
+    - a
+    - a. 
+
+- intent: umur_3_6bulan
+  examples: |
+    - b
+    - b.
+
+- intent: umur_6_9bulan
+  examples: |
+    - c
+    - c.
+
+- intent: umur_9_12bulan
+  examples: |
+    - d
+    - d.
+
+- intent: umur_12_18bulan
+  examples: |
+    - e
+    - e.
+
+- intent: umur_18_24bulan
+  examples: |
+    - f
+    - f.
+
+- intent: umur_2_3tahun
+  examples: |
+    - g
+    - g.
+
+- intent: umur_3_4tahun
+  examples: |
+    - h
+    - h.
+
+- intent: umur_4_5tahun
+  examples: |
+    - i
+    - i.
+
+- intent: umur_5_6tahun
+  examples: |
+    - j
+    - j.
+
+- intent: kpsp_3bulan
+  examples: |
+    - a
+    - a. 
+  
+- intent: kpsp_6bulan
+  examples: |
+    - b
+    - b.
+  
+- intent: kpsp_9bulan
+  examples: |
+    - c
+    - c.
+  
+- intent: kpsp_12bulan
+  examples: |
+    - d
+    - d.
+
+- intent: kpsp_15bulan
+  examples: |
+    - e
+    - e.
+
+- intent: kpsp_18bulan
+  examples: |
+    - f
+    - f.
+
+- intent: kpsp_21bulan
+  examples: |
+    - kpsp 21 bulan
+    - 21 bulan
+    - 22 bulan
+    - 23 bulan
+    - g
+    - g.
+
+- intent: kpsp_24bulan
+  examples: |
+    - kpsp 24 bulan
+    - 24 bulan
+    - 25 bulan
+    - 26 bulan
+    - 27 bulan
+    - 28 bulan
+    - 29 bulan
+    - h
+    - h.
+
+- intent: kpsp_30bulan
+  examples: |
+    - kpsp 30 bulan
+    - 30 bulan
+    - 31 bulan
+    - 32 bulan
+    - 33 bulan
+    - 34 bulan
+    - 35 bulan
+    - i
+    - i.
+
+- intent: kpsp_36bulan
+  examples: |
+    - kpsp 36 bulan
+    - 36 bulan
+    - 37 bulan
+    - 38 bulan 
+    - 39 bulan
+    - 40 bulan
+    - 41 bulan
+    - j
+    - j.
+
+- intent: kpsp_42bulan
+  examples: |
+    - kpsp 42 bulan
+    - 42 bulan
+    - 43 bulan
+    - 44 bulan
+    - 45 bulan
+    - 46 bulan
+    - 47 bulan
+    - k
+    - k.
+
+- intent: kpsp_48bulan
+  examples: |
+    - kpsp 48 bulan
+    - 48 bulan
+    - 49 bulan
+    - 50 bulan
+    - 51 bulan
+    - 52 bulan
+    - 53 bulan
+    - l
+    - l.
+
+- intent: kpsp_54bulan
+  examples: |
+    - kpsp 54 bulan
+    - 54 bulan
+    - 54 bulan
+    - 55 bulan
+    - 56 bulan
+    - 57 bulan
+    - 58 bulan
+    - 59 bulan
+    - m
+    - m.

@@ -1,0 +1,190 @@
+version: "3.1"
+
+responses:
+  utter_ask_question11: 
+  - text: "Pada waktu bayi terlentang, apakah masing-masing lengan dan tungkai bergerak dengan mudah? Jawaban TIDAK bila salah satu atau kedua tungkai atau lengan bayi bergerak tak terarah/tak terkendali"
+
+  utter_ask_question12:
+  - text: "Pada waktu bayi terlentang apakah ia melihat dan menatap wajah anda?"
+
+  utter_ask_question13:
+  - text: "Apakah bayi dapat mengeluarkan suara-suara lain (ngoceh) selain menangis?"
+
+  utter_ask_question14:
+  - text: "Pada waktu anda mengajak bayi berbicara dan tersenyum, apakah ia tersenyum kembali kepada anda?"
+
+  utter_ask_question15:
+  - text: "Apakah bayi suka tertawa keras walau tidak digelitik atau diraba-raba?"
+
+  utter_ask_question16:
+  - text: "Ambil wool merah, letakkan di atas wajah di depan mata, gerakkan wool dari samping kiri ke kanan kepala. Apakah ia dapat mengikuti gerakan anda dengan menggerakkan kepalanya dari kanan/kiri ke tengah?"
+    image: "https://imgur.com/a/b0o1gwL"  
+
+  utter_ask_question17:
+  - text: "Ambil wool merah, letakkan di atas wajah di depan mata, gerakkan wool dari samping kiri ke kanan kepala. Apakah ia dapat mengikuti gerakan anda dengan menggerakkan kepalanya dari satu sisi hampir sampai pada sisi yang lain?"
+    image: "https://imgur.com/ZvkvOia"
+
+  utter_ask_question18:
+  - text: "Pada waktu bayi telungkup di alas yang datar, apakah ia dapat mengangkat kepalanya seperti pada gambar ini"
+    image: "https://imgur.com/AmAIKv6"
+
+  utter_ask_question19:
+  - text: "Pada waktu bayi telungkup di alas yang datar, apakah ia dapat mengangkat kepalanya sehingga membentuk sudut 45˚ seperti pada gambar?"
+    image: "https://imgur.com/Fhp0EwW"
+
+  utter_ask_question110:
+  - text: "Pada waktu bayi telungkup di alas yang datar, apakah ia dapat mengangkat kepalanya dengan tegak seperti pada gambar?"
+    image: "https://imgur.com/JtPewSr"
+
+  utter_slots_valuefirst:
+  - text: "Berikut Rangkuman Checklist Anda:\n
+            1. Pada waktu bayi terlentang, apakah masing-masing lengan dan tungkai bergerak dengan mudah? Jawaban TIDAK bila salah satu atau kedua tungkai atau lengan bayi bergerak tak terarah/tak terkendali {question11}\n
+            2. Pada waktu bayi terlentang apakah ia melihat dan menatap wajah anda? {question12}\n
+            3. Apakah bayi dapat mengeluarkan suara-suara lain (ngoceh) selain menangis? {question13}\n
+            4. Pada waktu anda mengajak bayi berbicara dan tersenyum, apakah ia tersenyum kembali kepada anda? {question14}\n
+            5. Apakah bayi suka tertawa keras walau tidak digelitik atau diraba-raba?
+ {question15}\n
+            6. Ambil wool merah, letakkan di atas wajah di depan mata, gerakkan wool dari samping kiri ke kanan kepala. Apakah ia dapat mengikuti gerakan anda dengan menggerakkan kepalanya dari kanan/kiri ke tengah? {question16} \n
+            7. Ambil wool merah, letakkan di atas wajah di depan mata, gerakkan wool dari samping kiri ke kanan kepala. Apakah ia dapat mengikuti gerakan anda dengan menggerakkan kepalanya dari satu sisi hampir sampai pada sisi yang lain?
+ {question17}\n
+            8. Pada waktu bayi telungkup di alas yang datar, apakah ia dapat mengangkat kepalanya seperti pada gambar ini? {question18} \n
+            9. Pada waktu bayi telungkup di alas yang datar, apakah ia dapat mengangkat kepalanya sehingga membentuk sudut 45˚ seperti pada gambar? {question19}\n
+            10. Pada waktu bayi telungkup di alas yang datar, apakah ia dapat mengangkat kepalanya dengan tegak seperti pada gambar? {question110}\n"
+
+  utter_response_question11:
+  - text: "Solusi Pertanyaan Nomor 1: \n
+Aspek : Motorik Kasar \n
+
+Perkembangan : Bergerak dengan mudah saat terlentang \n
+
+Stimulasi :\n
+Posisikan anak secara terlentang, kemudian berikan stimulus berupa mainan yang menarik perhatian bayi.\n
+
+Sumber :\n
+Bidan - Rizki Amalia SST., M.P.H.\n
+  "
+
+  utter_response_question12:
+  - text: "Solusi Pertanyaan Nomor 2: \n
+Aspek : Motorik Halus \n
+
+Perkembangan : Melihat dan menatap wajah anda\n
+
+Stimulasi :\n
+1. Melihat, meraih dan menendang mainan gantung. \n • Gantungkan mainan/benda pada tali diatas bayi dengan jarak 30 cm atau sekitar 2 jengkal tangan orang dewasa. Bayi akan tertarik dan melihat sehingga menggerakkan tangan dan kakimya sebagai reaksi, pastikan benda tersebut tidak bisa dimasukkan ke mulut bayi dan tidak akan terlepas dari ikatan.\n
+
+Sumber :\n
+Buku panduan SDIDTK anak oleh Kementerian Kesehatan RI\n
+"
+
+  utter_response_question13:
+  - text: "Solusi Pertanyaan Nomor 3: \n
+ Aspek : Bicara dan Bahasa \n
+
+Perkembangan : Mengoceh\n
+
+Stimulasi:\n
+1. Bercakap-cakap\n
+• Ketika bayi mengoceh, tatap matanya dan jawab dengan kata-kata sederhana dan suara gembira, kemudian diam sesaat untuk memberikan kesempatan bayi untuk merespons. Lanjutkan hingga terbentuk kegiatan seperti bercakap-cakap walaupun bayi belum berkata-kata.\n
+
+Sumber :\n
+Aplikasi PrimaKu yang didukung oleh Ikatan Dokter Anak Indonesia (IDAI)\n"
+
+  utter_response_question14:
+  - text: "Solusi Pertanyaan Nomor 4: \n
+  Aspek : Bicara dan Bahasa\n
+
+Perkembangan : Merespon dengan bersuara dan tersenyum\n
+
+Stimulasi :\n
+1. Mengajak bayi tersenyum\n
+2. Berbicara\n
+• Setiap hari bicara dengan bayi dengan bahasa ibu sesering mungkin menggunakan setiap kesempatan seperti waktu memandaikan bayi, mengenakan pakaiannya, menyusui, di tempat tidur, ketika anda sedang mengerjakan pekerjaan rumah tangga dan sebagainya\n
+
+3. Mengenali berbagai suara\n
+• Ajak bayi mendengarkan berbagai suara seperti suara orang, binatang, radio dan sebagainya. Bayi tidak mendengar dan melihat TV sampai umur 2 tahun.\n
+• Tirukan ocehan bayi sesering mungkin agar terjadi komunikasi dan interaksi.\n
+
+Sumber :\n
+Buku panduan SDIDTK anak oleh Kementerian Kesehatan RI\n"
+
+  utter_response_question15:
+  - text: "Solusi Pertanyaan Nomor 5: \n
+  Aspek : Bicara dan Bahasa\n
+
+Perkembangan : Bayi suka tertawa walau tidak digelitik atau diraba\n
+
+Stimulasi: Sering bercanda dan berkomunikasi dengan suara yang keras dengan anak.\n
+
+Sumber :\n
+Bidan - Rizki Amalia SST., M.P.H.\n"
+
+  utter_response_question16:
+  - text: "Solusi Pertanyaan Nomor 6:
+  Aspek : Motorik Kasar\n
+
+Perkembangan : Menggerakkan kepala dari kiri/kanan ke tengah\n
+
+Stimulasi:\n
+1. Berguling\n
+• Letakkan mainan berwama cerah di dekat bayi agar ia dapat melihat dan tertarik pada mainan tersebut. Kemudian pindahkan benda tersebut ke sisi lain dengan perlahan. Awalnya,bayi perlu dibantu dengan cara menyilangkan paha bayi agar badannya ikut bergerak miring sehingga memudahkan bayi berguling.\n
+
+Sumber :\n
+Buku panduan SDIDTK anak oleh Kementerian Kesehatan RI\n
+  "
+
+  utter_response_question17:
+  - text: "Solusi Pertanyaan Nomor 6: \n
+  Aspek : Motorik Halus\n
+
+Perkembangan : Menggerakkan kepala dari sisi satu ke sisi yang lain\n
+
+Stimulasi:\n
+1. Gunakan mainan untuk menarik perhatian anak\n
+• Pilih mainan yang mencolok warnanya (warna primer), ganti mainan yang menarik (bisa dikombinasikan dengan kerincingan).\n
+• Perhatikan jam-jam stimulasinya, ganti jamnya. Disarankan untuk tidak memberikan stimulus saat anak ngantuk atau lapar.\n
+
+Sumber :\n
+Bidan - Rizki Amalia SST., M.P.H.\n
+
+"
+
+  utter_response_question18:
+  - text: "Solusi Pertanyaan Nomor 8: \n
+  Aspek : Motorik Kasar\n
+
+Perkembangan : Menahan kepala tetap tegak\n
+
+Stimulasi: Gendong bayi dalam posisi tegak agar ia dapat belajar menahan kepalanya tetap tegak\n
+
+Sumber :\n
+Buku panduan SDIDTK anak oleh Kementerian Kesehatan RI\n
+  "
+  
+  utter_response_question19:
+  - text: "Solusi Pertanyaan Nomor 9:\n
+  Aspek : Motorik Kasar\n
+
+Perkembangan : Mengangkat kepala setinggi 45°\n
+
+Stimulasi: Letakkan bayi pada posisi telungkup. Gerakkan sebuah mainan berwarna cerah atau buat suara-suara gembira di depan bayi sehingga ia akan belajar mengangkat kepalanya.Secara berangsur-angsur ia akan menggunakan kedua lengannya untuk mengangkat kepala dan dadanya.\n
+
+Sumber :\n
+Buku panduan SDIDTK anak oleh Kementerian Kesehatan RI\n
+  "
+
+  utter_response_question110:
+  - text: "Solusi Pertanyaan Nomor 10: \n
+  Aspek : Motorik Kasar\n
+
+Perkembangan : Menegakkan Kepala\n
+
+Stimulasi:\n
+1. Menahan kepala tetap tegak\n
+• Gendong bayi dalam posisi kepala lebih tinggi sambil tetap menopang leher dengan baik, agar bayi dapat belajar menahan kepalanya.\n
+
+Sumber :\n
+Aplikasi PrimaKu yang didukung oleh Ikatan Dokter Anak Indonesia (IDAI)\n
+  "
+
+  

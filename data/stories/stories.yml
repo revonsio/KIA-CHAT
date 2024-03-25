@@ -1,0 +1,27 @@
+version: "3.1"
+
+stories:
+- story: start chatbot
+  steps:
+  - intent: greet
+  - action: utter_ask_user_question
+  - checkpoint: ask_user_question
+
+
+
+# - story: topik tinggi badan
+#   steps:
+#   - intent: greet
+#   - action: utter_greet
+#   - intent: menu_tb
+#   - action: utter_tanya_umur
+  
+
+  
+
+# - story: topik lainnya
+#   steps:
+#   - intent: greet
+#   - action: utter_greet
+#   - intent: menu_lainnya
+#   - action: utter_tanya_umur

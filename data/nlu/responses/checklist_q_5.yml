@@ -1,0 +1,36 @@
+responses:
+  utter_ask_question51: 
+  - text: "Anak bisa berdiri sendiri tanpa berpegangan?"
+
+  utter_ask_question52: 
+  - text: "Anak bisa membungkuk memungut mainan kemudian berdiri kembali?"
+
+  utter_ask_question53: 
+  - text: "Anak bisa berjalan mundur lima langkah?"
+
+  utter_ask_question54: 
+  - text: "Anak bisa memanggil ayah dengan kata ”papa”, memanggil ibu dengan kata ”mama”?"
+
+  utter_ask_question55: 
+  - text: "Anak bisa menumpuk dua kubus?"
+
+  utter_ask_question56: 
+  - text: "Anak bisa memasukkan kubus di kotak?"
+
+  utter_ask_question57: 
+  - text: "Anak bisa menunjuk apa yang diinginkan tanpa menangis/ merengek, anak bisa mengeluarkan suara yang menyenangkan atau menarik tangan ibu?"
+
+  utter_ask_question58: 
+  - text: "Anak bisa memperlihatkan rasa cemburu / bersaing?"
+
+  utter_slots_valuefifth:
+  - text: "Berikut Rangkuman Checklist Anda:\n
+            1. Anak bisa berdiri sendiri tanpa berpegangan?  {question51} \n
+            2. Anak bisa membungkuk memungut mainan kemudian berdiri kembali?  {question52} \n
+            3. Anak bisa berjalan mundur lima langkah?  {question53} \n
+            4. Anak bisa memanggil ayah dengan kata ”papa”, memanggil ibu dengan kata ”mama”?  {question54} \n
+            5. Anak bisa menumpuk dua kubus?  {question55} \n
+            6. Anak bisa memasukkan kubus di kotak? {question56} \n
+            7. Anak bisa menunjuk apa yang diinginkan tanpa menangis/ merengek, anak bisa mengeluarkan suara yang menyenangkan atau menarik tangan ibu?  {question57} \n
+            8. Anak bisa memperlihatkan rasa cemburu / bersaing?  {question58} \n
+          "

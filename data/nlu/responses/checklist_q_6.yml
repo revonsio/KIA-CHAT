@@ -1,0 +1,36 @@
+responses:
+  utter_ask_question61: 
+  - text: "Anak bisa berdiri sendiri tanpa berpegangan 30 detik?"
+
+  utter_ask_question62: 
+  - text: "Anak bisa berjalan tanpa terhuyung-huyung?"
+
+  utter_ask_question63: 
+  - text: "Anak bisa menumpuk 4 buah kubus?"
+
+  utter_ask_question64: 
+  - text: "Anak bisa memungut benda kecil dengan ibu jari dan jari telunjuk?"
+
+  utter_ask_question65: 
+  - text: "Anak bisa menggelindingkan bola ke arah sasaran?"
+
+  utter_ask_question66: 
+  - text: "Anak bisa menyebut 3 – 6 kata yang mempunyai arti?"
+
+  utter_ask_question67: 
+  - text: "Anak bisa membantu/menirukan pekerjaan rumah tanggal?"
+
+  utter_ask_question68: 
+  - text: "Anak bisa memegang cangkir sendiri, belajar makan-minum sendiri?"
+
+  utter_slots_valuesixth:
+  - text: "Berikut Rangkuman Checklist Anda:\n
+            1. Anak bisa berdiri sendiri tanpa berpegangan 30 detik? {question61} \n
+            2. Anak bisa berjalan tanpa terhuyung-huyung? {question62} \n
+            3. Anak bisa menumpuk 4 buah kubus? {question63} \n
+            4. Anak bisa memungut benda kecil dengan ibu jari dan jari telunjuk? {question64} \n
+            5. Anak bisa menggelindingkan bola ke arah sasaran? {question65} \n
+            6. Anak bisa menyebut 3 – 6 kata yang mempunyai arti? {question66} \n
+            7. Anak bisa membantu/menirukan pekerjaan rumah tanggal? {question67} \n
+            8. Anak bisa memegang cangkir sendiri, belajar makan-minum sendiri? {question68} \n
+          "

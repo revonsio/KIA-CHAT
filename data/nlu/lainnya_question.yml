@@ -1,0 +1,13 @@
+version: "3.1"
+
+nlu:
+# intent topik
+- intent: manfaat_menyanyikan_lagu
+  examples: |
+    - manfaat menyanyikan lagu untuk bayi
+    - kegunaan lagu untuk perkembangan otak bayi
+    - apa manfaat musik untuk bayi
+    - jenis musik yang cocok untuk bayi
+    - lagu untuk bayi umur 1 bulan
+    - Sore dok, saya ada baca buku parenting katanya sering menyanyikan lagu untuk bayi bisa untuk membantu perkembangan otak bayi, apakah benar dok? musik yg seperti apa yg bisa saya nyanyikan untuk bayi saya yg umurnya 1 bulan?
+    

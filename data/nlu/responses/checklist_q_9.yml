@@ -1,0 +1,76 @@
+responses:
+  utter_ask_question91: 
+  - text: "Anak bisa berdiri 1 kaki 6 detik"
+
+  utter_ask_question92: 
+  - text: "Anak bisa melompat-lompat 1 kaki"
+
+  utter_ask_question93: 
+  - text: "Anak bisa menari"
+
+  utter_ask_question94: 
+  - text: "Anak bisa menggambar tanda silang"
+  
+  utter_ask_question95: 
+  - text: "Anak bisa menggambar lingkaran"
+
+  utter_ask_question96: 
+  - text: "Anak bisa menggambar orang dengan 3 bagian tubuh"
+
+  utter_ask_question97: 
+  - text: "Anak bisa mengancing baju atau pakaian boneka"
+
+  utter_ask_question98: 
+  - text: "Anak bisa menyebut nama lengkap tanpa dibantu"
+
+  utter_ask_question99: 
+  - text: "Anak bisa senang menyebut kata-kata baru"
+
+  utter_ask_question910: 
+  - text: "Anak bisa senang bertanya tentang sesuatu"
+
+  utter_ask_question911: 
+  - text: "Anak bisa menjawab pertanyaan dengan kata-kata yang benar"
+
+  utter_ask_question912: 
+  - text: "Anak bisa bicara yang mudah dimengerti"
+
+  utter_ask_question913: 
+  - text: "Anak bisa bisa membandingkan/membedakan sesuatu dari ukuran dan bentuknya"
+
+  utter_ask_question914: 
+  - text: "Anak bisa menyebut angka, menghitung jari"
+
+  utter_ask_question915: 
+  - text: "Anak bisa menyebut nama-nama hari"
+
+  utter_ask_question916: 
+  - text: "Anak bisa berpakaian sendiri tanpa dibantu"
+
+  utter_ask_question917: 
+  - text: "Anak bisa menggosok gigi tanpa dibantu"
+
+  utter_ask_question918: 
+  - text: "Anak bereaksi tenang dan tidak rewel ketika ditinggal ibu"
+
+  utter_slots_valueninth:
+  - text: "Berikut Rangkuman Checklist Anda:\n
+            1. Anak bisa berdiri 1 kaki 6 detik {question91} \n
+            2. Anak bisa melompat-lompat 1 kaki {question92} \n
+            3. Anak bisa menari {question93} \n
+            4. Anak bisa menggambar tanda silang {question94} \n
+            5. Anak bisa menggambar lingkaran {question95} \n
+            6. Anak bisa menggambar orang dengan 3 bagian tubuh {question96} \n
+            7. Anak bisa mengancing baju atau pakaian boneka {question97} \n
+            8. Anak bisa menyebut nama lengkap tanpa dibantu {question98} \n
+            9. Anak bisa senang menyebut kata-kata baru {question99} \n
+            10. Anak bisa senang bertanya tentang sesuatu {question910} \n
+            11. Anak bisa menjawab pertanyaan dengan kata-kata yang benar {question911} \n
+            12. Anak bisa bicara yang mudah dimengerti {question912} \n
+            13. Anak bisa bisa membandingkan/membedakan sesuatu dari ukuran dan bentuknya {question913} \n
+            14. Anak bisa menyebut angka, menghitung jari {question914} \n
+            15. Anak bisa menyebut nama-nama hari {question915} \n
+            16. Anak bisa berpakaian sendiri tanpa dibantu {question916} \n
+            17. Anak bisa menggosok gigi tanpa dibantu {question917} \n
+            18. Anak bereaksi tenang dan tidak rewel ketika ditinggal ibu {question918} \n
+          "

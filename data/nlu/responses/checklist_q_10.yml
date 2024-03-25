@@ -1,0 +1,55 @@
+responses:
+  utter_ask_question101: 
+  - text: "Anak bisa berjalan lurus?"
+
+  utter_ask_question102: 
+    - text: "Anak bisa berdiri dengan 1 kaki selama 11 detik?"
+
+  utter_ask_question103: 
+    - text: "Anak bisa menggambar dengan 6 bagian, menggambar orang lengkap?"
+
+  utter_ask_question104: 
+    - text: "Anak bisa menangkap bola kecil dengan kedua tangan?"
+
+  utter_ask_question105: 
+    - text: "Anak bisa menggambar segi empat?"
+
+  utter_ask_question106: 
+    - text: "Anak bisa mengerti arti lawan kata?"
+
+  utter_ask_question107: 
+    - text: "Anak bisa mengerti pembicaraan yang menggunakan 7 kata atau lebih?"
+
+  utter_ask_question108: 
+    - text: "Anak bisa menjawab pertanyaan tentang benda terbuat dari apa dan kegunaannya?"
+
+  utter_ask_question109: 
+    - text: "Anak bisa mengenal angka, bisa menghitung angka 5 -10?"
+
+  utter_ask_question1010: 
+    - text: "Anak bisa mengenal warna-warni?"
+
+  utter_ask_question1011: 
+    - text: "Anak bisa mengungkapkan simpati?"
+
+  utter_ask_question1012: 
+    - text: "Anak bisa mengikuti aturan permainan?"
+
+  utter_ask_question1013: 
+    - text: "Anak bisa berpakaian sendiri tanpa dibantu?"
+
+  utter_slots_valuetenth:
+  - text: "Berikut Rangkuman Checklist Anda:\n
+            1. Anak bisa berjalan lurus? {question101} \n
+            2. Anak bisa berdiri dengan 1 kaki selama 11 detik? {question102} \n
+            3. Anak bisa menggambar dengan 6 bagian, menggambar orang lengkap? {question103} \n
+            4. Anak bisa menangkap bola kecil dengan kedua tangan? {question104} \n
+            5. Anak bisa menggambar segi empat? {question105} \n
+            6. Anak bisa mengerti arti lawan kata? {question106} \n
+            7. Anak bisa mengerti pembicaraan yang menggunakan 7 kata atau lebih? {question107} \n
+            8. Anak bisa menjawab pertanyaan tentang benda terbuat dari apa dan kegunaannya? {question108} \n
+            9. Anak bisa mengenal angka, bisa menghitung angka 5 -10? {question109} \n
+            10. Anak bisa mengenal warna-warni? {question1010} \n
+            11. Anak bisa mengungkapkan simpati? {question1011} \n
+            12. Anak bisa mengikuti aturan permainan? {question1012} \n
+            13. Anak bisa berpakaian sendiri tanpa dibantu? {question1013} \n"

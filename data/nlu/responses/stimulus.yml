@@ -1,0 +1,164 @@
+responses:
+  # Jawaban Stimulus
+  utter_stimulus_29hari_3bulan:
+  - text: "Setiap saat lakukan stimulasi sesuai usia bayi dalam suasana menyenangkan, baik oleh
+  orang tua maupun anggota keluarga.
+  Stimulasi bayi pada rentang usia 0-3 bulan dengan: \n
+  - Ciptakan rasa nyaman, aman, senang \n
+  - Peluk, cium, ayun \n
+  - Senyum, tatap mata, ajak bicara \n
+  - Tirukan ocehan dan mimik bayi \n
+  - Interaksi langsung untuk mengenalkan berbagai suara, bunyi, atau nyanyian \n
+  - Gantung benda berwarna, berbunyi\n
+  - Meraih, meraba, pegang mainan, angkat kepala
+  "
+
+  utter_stimulus_3_6bulan:
+  - text: "Setiap saat lakukan stimulasi sesuai usia bayi dalam suasana menyenangkan, baik oleh
+  orang tua maupun anggota keluarga.
+  Stimulasi bayi pada rentang usia 3-6 bulan dengan: \n
+  - Peluk, cium, pandang mata, senyum, bicara \n
+  - Mencari sumber suara \n
+  - Bermain cilukba, melihat wajah di cermin \n
+  - Memeluk, mengayun \n
+  - Melihat, meraih \n
+  - Mengamati benda kecil, benda bergerak \n
+  - Mengambil benda kecil \n
+  - Berguling-guling, duduk \n
+  "
+
+  utter_stimulus_6_9bulan:
+  - text: "Setiap saat lakukan stimulasi sesuai usia bayi dalam suasana menyenangkan, baik oleh
+  orang tua maupun anggota keluarga.
+  Stimulasi bayi pada rentang usia 6-9 bulan dengan: \n
+  - Peluk, senyum, bicara, panggil namanya \n
+  - Bersalaman, tepuk tangan, melambai ke orang lain\n
+  - Kenalkan/ tunjuk nama orang (papa dan mama) dan benda sekitar \n
+  - Cilukba, melihat cermin \n
+  - Tunjuk dan sebutkan nama gambar \n
+  - Bacakan dongeng \n
+  - Pegang mainan dengan 2 tangan \n
+  - Masukkan benda kecil ke dalam wadah \n
+  - Sembunyikan dan cari mainan \n
+  - Mainan yang mengapung di air \n
+  - Memukul-mukul\n
+  - Duduk, merangkak, berdiri berpegangan\n
+  "
+
+  utter_stimulus_9_12bulan:
+  - text: "Setiap saat lakukan stimulasi sesuai usia bayi dalam suasana menyenangkan, baik oleh
+  orang tua maupun anggota keluarga.
+  Stimulasi bayi pada rentang usia 9-12 bulan dengan: \n
+  - Berbicara dengan boneka \n
+  - Menunjuk orang/benda/organ tubuh yang sudah dikenalkan \n
+  - Mengucapkan orang/benda/organ tubuh yang sudah dikenalkan \n
+  - Bacakan dongeng pada saat mengenalkan dan menyuruh menunjuk \n
+  - Pegang mainan dengan 2 tangan \n
+  - Memasukan benda kecil ke dalam wadah \n 
+  - Menyusun balok \n
+  - Sembunyikan dan cari mainan \n
+  - Memegang pensil dan mencoretcoret kertas \n
+  - Duduk, merangkak, berdiri berpegangan\n
+  - Berjalan mundur, jinjit\n
+  "
+
+  utter_stimulus_12_18bulan:
+  - text: "Setiap saat lakukan stimulasi sesuai usia bayi dalam suasana menyenangkan, baik oleh
+  orang tua maupun anggota keluarga.
+  Stimulasi bayi pada rentang usia 12-18 bulan dengan: \n
+  - Berjalan mundur, naik tangga \n
+  - Tangkap dan lempar bola\n
+  - Menyusun balok atau puzzle, menggambar\n
+  - Bermain air, meniup, menendang bola\n
+  - Bercerita tentang gambar di buku\n
+  - Menyebutkan nama benda, menyanyi\n
+  - Main telpon-telponan, menyatakan keinginan\n
+  - Bermain dengan teman sebaya, petak umpet\n
+  - Merapikan mainan, membuka baju\n
+  - Makan bersama\n
+  - Merangkai manik besar\n
+  "
+
+  utter_stimulus_18_24bulan:
+  - text: "Setiap saat lakukan stimulasi sesuai usia bayi dalam suasana menyenangkan, baik oleh
+  orang tua maupun anggota keluarga.
+  Stimulasi bayi pada rentang usia 18-24 bulan dengan: \n
+  - Bicara, bertanya, bercerita, bernyanyi \n
+  - Tanya jawab, main telpon-telponan \n
+  - Perintah sederhana, membantu pekerjaan \n
+  - Melepas baju, rapikan mainan \n
+  - Makan bersama dengan sendok garpu\n
+  - Menyusun balok, memasang puzzle, menggambar, membentuk lilin\n
+  - Buat rumah-rumahan, petak umpet\n
+  - Berjalan, berlari, melompat\n
+  - Berdiri satu kaki, naik turun tangga\n
+  - Melempar, menangkap, menendang bola\n
+  "
+
+  utter_stimulus_2_3tahun:
+  - text: "Setiap saat lakukan stimulasi sesuai usia bayi dalam suasana menyenangkan, baik oleh
+  orang tua maupun anggota keluarga.
+  Stimulasi bayi pada rentang usia 2-3 tahun dengan: \n
+  - Sebutkan nama benda, sifat, guna benda \n
+  - Bacakan cerita, tanya jawab\n
+  - Anak diminta bercerita pengalaman menonton TV didampingi maksimal 1 jam, menyanyi \n
+  - Cuci tangan, cebok, berpakaian, rapikan mainan\n
+  - Makan dengan sendok garpu \n
+  - Menyusun balok, memasang puzzle, menggambar, menempel\n
+  - Mengelompokkan benda sejenis\n
+  - Mencocokkan gambar dan benda\n
+  - Menghitung\n
+  - Melempar, menangkap\n
+  - Berlari, melompat, memanjat, merayap\n
+  "
+
+  utter_stimulus_3_4tahun:
+  - text: "Setiap saat lakukan stimulasi sesuai usia bayi dalam suasana menyenangkan, baik oleh
+  orang tua maupun anggota keluarga.
+  Stimulasi bayi pada rentang usia 3-4 tahun dengan: \n
+  - Sebutkan nama benda, sifat, guna benda \n
+  - Bacakan cerita, tanya jawab\n
+  - Anak diminta bercerita pengalaman menonton TV didampingi maksimal 1 jam, menyanyi \n
+  - Cuci tangan, cebok, berpakaian, rapikan mainan\n
+  - Makan dengan sendok garpu \n
+  - Menyusun balok, memasang puzzle, menggambar, menempel\n
+  - Mengelompokkan benda sejenis\n
+  - Mencocokkan gambar dan benda\n
+  - Menghitung\n
+  - Melempar, menangkap\n
+  - Berlari, melompat, memanjat, merayap\n
+  "
+
+  utter_stimulus_4_5tahun:
+  - text: "Setiap saat lakukan stimulasi sesuai usia bayi dalam suasana menyenangkan, baik oleh
+  orang tua maupun anggota keluarga.
+  Stimulasi bayi pada rentang usia 4-5 tahun dengan: \n
+  - Bermain peran, anak diminta bercerita pengalaman \n
+  - Menggambar orang, mengenal huruf \n
+  - Main bola, lompat tali\n
+  - Latih untuk dapat mengikuti aturan permainan\n
+  - Kenalkan nama-nama hari\n
+  - Menyebut angka berurutan\n
+  - Mengajak anak sikat gigi bersama dan melatih sikat gigi sendiri\n
+  - Melatih memakai pakaian sendiri\n
+  - Menguatkan kepercayaan diri anak\n
+  "
+
+  utter_stimulus_5_6tahun:
+  - text: "Setiap saat lakukan stimulasi sesuai usia bayi dalam suasana menyenangkan, baik oleh
+  orang tua maupun anggota keluarga.
+  Stimulasi bayi pada rentang usia 4-5 tahun dengan: \n
+  - Mengenal nama, fungsi benda-benda \n
+  - Bacakan buku, tanya jawab, bercerita\n
+  - Menonton TV didampingi maksimal 1 jam, menyanyi\n
+  - Cuci tangan, cebok, berpakaian, rapikan mainan\n
+  - Makan dengan sendok garpu, masak-masakan\n
+  - Menggunting, menempel, menjahit,\n
+  - Menyusun balok, memasang puzzle, menggambar, mewarna, menulis nama\n
+  - Mengingat, menghafal, mengerti aturan, urutan\n
+  - Membandingkan besar kecil, banyak sedikit\n
+  - Menghitung, konsep satu dan setengah\n
+  - Mengenal angka, huruf, simbol, jam, hari, tanggal\n
+  - Melempar, menangkap, berlari, melompat\n
+  - Memanjat, merayap, sepeda roda 3, ayunan, “berjualan”, “bertukang”, mengukur\n
+  "     

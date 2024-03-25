@@ -1,13 +1,43 @@
 version: "3.1"
 
 rules:
-
-- rule: Say goodbye anytime the user says goodbye
-  steps:
-  - intent: goodbye
-  - action: utter_goodbye
-
-- rule: Say 'I am a bot' anytime the user challenges
+- rule: Bot Challenge
   steps:
   - intent: bot_challenge
   - action: utter_iamabot
+
+- rule: Selamat tinggal
+  steps:
+  - intent: pamit
+  - action: utter_pamit
+
+# - rule: Activate checklistfirst_form
+#   steps:
+#   - intent: setuju
+#   - action: checklistfirst_form
+#   - active_loop: checklistfirst_form
+
+# - rule: Submit checklistfirst_form
+#   condition:
+#   - active_loop: checklistfirst_form
+#   steps:
+#   - action: checklistfirst_form
+#   - active_loop: null
+#   - action: utter_slots_valuefirst
+#   - action: action_restart
+
+# - rule: Activate checklistsecond_form
+#   steps:
+#   - intent: affirm
+#   - action: checklistsecond_form
+#   - active_loop: checklistsecond_form
+
+# - rule: Submit checklistsecond_form
+#   condition:
+#   - active_loop: checklistsecond_form
+#   steps:
+#   - action: checklistsecond_form
+#   - active_loop: null
+#   - action: utter_slots_valuesecond
+#   - action: action_restart
+
