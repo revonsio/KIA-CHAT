@@ -9,6 +9,37 @@ from rasa_sdk.executor import CollectingDispatcher
 from rasa_sdk.events import SlotSet
 from rasa_sdk.forms import FormValidationAction
 
+class ValidateWelcomeForm(FormValidationAction):
+    """Example of a form validation action."""
+
+    def name(self) -> Text:
+        return "validate_welcome_form"
+
+    @staticmethod
+    def is_int(string: Text) -> bool:
+        """Check if a string is an integer."""
+        try:
+            int(string)
+            return True
+        except ValueError:
+            return False
+    
+    def validate_menu(
+        self,
+        value: Text,
+        dispatcher: CollectingDispatcher,
+        tracker: Tracker,
+        domain: Dict[Text, Any],
+    ) -> Dict[Text, Any]:
+        """Validate num_people value."""
+        
+        if self.is_int(value) and int(value) > 0:
+            return {"menu": value}
+        else:
+            dispatcher.utter_message(Text="salah input")
+            # validation failed, set slot to None
+            return {"menu": None}
+
 class ActionDataBeratbadan(Action):
     def name(self):
         return "action_data_beratbadan"

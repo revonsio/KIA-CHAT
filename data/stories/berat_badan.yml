@@ -3,7 +3,6 @@ version: "3.1"
 stories:
 - story: topik berat badan
   steps:
-  - checkpoint: ask_user_question
   - intent: menu_bb
   - action: beratbadan_form
   - action: action_data_beratbadan

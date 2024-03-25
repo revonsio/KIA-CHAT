@@ -9,6 +9,7 @@ intents:
   - menu_lainnya
   - laki_laki
   - perempuan
+  - inform
   - inform_umur
   - inform_bb
   - bot_challenge
@@ -51,15 +52,20 @@ intents:
 entities:
   - umur
   - berat_badan
+  - number
   
 
 actions:
   - action_data_beratbadan
   - action_feedback_checklistfirst
   - action_feedback_checklistsecond
-  # - validate_checklistfirst_form
+  - validate_welcome_form
 
 forms:
+  welcome_form:
+    required_slots:
+      - menu
+
   beratbadan_form:
     required_slots:
       - jenis_kelamin
@@ -209,18 +215,19 @@ forms:
       - question1013
 
 responses:
-  utter_ask_user_question:
-  - text: "Halo! Topik apa yang ingin Anda tanyakan? \n"
-    buttons:
-    - title: Berat badan
-      payload: /menu_bb
-    - title: Tinggi badan
-      payload: /menu_tb
-    - title: Tumbuh Kembang
-      payload: /menu_tk
-    - title: Lainnya
-      payload: /menu_lainnya
+  utter_slots_valuewelcome:
+  - text: "Input Anda: {menu}"
   
+  utter_ask_user_question:
+  - text: "Halo! Selamat datang di KIA CHAT, bot yang membantu Anda memperoleh informasi seputar tumbuh kembang Anak. \n"
+
+  utter_ask_menu:
+  - text: "Topik apa yang ingin Anda tanyakan? \n
+  1. Berat Badan \n
+  2. Tinggi Badan \n
+  3. Tumbuh Kembang \n
+  4. Lainnya \n
+  "
 
   utter_iamabot:
   - text: "Halo! Saya adalah KIA CHAT. Saya adalah bot yang akan memberikan informasi terkait perkembangan anak balita, mulai dari lahir hingga usia kurang dari 6 tahun. Topik informasi yang dapat saya berikan kepada Anda meliputi kemandirian, kemampuan berbahsa, motorik kasar, dan motorik halus."
@@ -310,6 +317,13 @@ responses:
 
   
 slots:
+  menu:
+    type: float
+    influence_conversation: false
+    mappings:
+    - type: from_entity
+      entity: number
+      intent: inform
   jenis_kelamin:
     type: bool
     mappings:

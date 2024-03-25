@@ -3,7 +3,6 @@ version: "3.1"
 stories:
 - story: topik lainnya
   steps:
-  - checkpoint: ask_user_question
   - intent: menu_lainnya
   - action: utter_welcome_menu_lainnya
   - checkpoint: menu_lainnya

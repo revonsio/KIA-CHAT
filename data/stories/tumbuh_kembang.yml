@@ -3,7 +3,6 @@ version: "3.1"
 stories:
 - story: topik tumbuh kembang
   steps:
-  - checkpoint: ask_user_question
   - intent: menu_tk
   - action: utter_welcome_menu_tk
   - checkpoint: menu_tk

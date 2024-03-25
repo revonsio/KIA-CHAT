@@ -107,6 +107,22 @@ nlu:
     - no
     - salah
 
+- intent: inform
+  examples: |
+    - menu nomor 1
+    - menu nomor 2
+    - menu nomor 3
+    - menu nomor 4
+    - nomor 1
+    - nomor 2
+    - nomor 3
+    - nomor 4
+    - 1
+    - 2
+    - 3
+    - 4
+    
+
 
 - intent: inform_umur
   examples: |
