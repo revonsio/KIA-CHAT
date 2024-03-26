@@ -6,39 +6,98 @@
 from typing import Dict, Text, Any, List, Union
 from rasa_sdk import Action, Tracker
 from rasa_sdk.executor import CollectingDispatcher
-from rasa_sdk.events import SlotSet
+from rasa_sdk.events import SlotSet, FollowupAction
 from rasa_sdk.forms import FormValidationAction
 
-class ValidateWelcomeForm(FormValidationAction):
-    """Example of a form validation action."""
+class ActionFeedbackWelcome(Action):
+    def name(self) -> Text:
+        return "action_feedback_welcome"
+
+    def run(self, 
+            dispatcher: CollectingDispatcher,
+            tracker: Tracker, 
+            domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+
+        submenu = tracker.get_slot("submenu")
+        option2action_name =   {"main": {
+                                    1: "action_handle_berat_badan",
+                                    2: "action_handle_tinggi_badan",
+                                    3: "action_handle_tumbuh_kembang",
+                                    4: "action_handle_lainnya"}
+                                }
+
+        try:
+            option = int(tracker.get_slot("option"))
+        except ValueError:
+            dispatcher.utter_message(text=f"Jawaban harus berupa angka!")
+            return [SlotSet('option', None)]
+        try:
+            next_action = option2action_name[submenu][option]
+        except KeyError:
+            dispatcher.utter_message(text=f"Maaf, opsi tidak tersedia")
+            return [SlotSet('option', None)]
+
+        dispatcher.utter_message(text=f"Anda telah memilih menu {option}")
+
+        if type(next_action) is tuple:
+            return [SlotSet('option', None),
+                    SlotSet('suboption', next_action[1]),
+                    FollowupAction(name=next_action[0])]
+        else:
+            return [SlotSet('option', None),
+                    FollowupAction(name=next_action)]
+    
+class ActionHandleBeratBadan(Action):
 
     def name(self) -> Text:
-        return "validate_welcome_form"
+        return "action_handle_berat_badan"
 
-    @staticmethod
-    def is_int(string: Text) -> bool:
-        """Check if a string is an integer."""
-        try:
-            int(string)
-            return True
-        except ValueError:
-            return False
+    def run(self, dispatcher: CollectingDispatcher,
+            tracker: Tracker,
+            domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+        message = """Menu Berat Badan."""
+        dispatcher.utter_message(text=message)
+
+        return []
+
+class ActionHandleTinggiBadan(Action):
+
+    def name(self) -> Text:
+        return "action_handle_tinggi_badan"
+
+    def run(self, dispatcher: CollectingDispatcher,
+            tracker: Tracker,
+            domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+        message = """Menu Tinggi Badan."""
+        dispatcher.utter_message(text=message)
+
+        return []
+
+class ActionHandleTumbuhKembang(Action):
+
+    def name(self) -> Text:
+        return "action_handle_tumbuh_kembang"
+
+    def run(self, dispatcher: CollectingDispatcher,
+            tracker: Tracker,
+            domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+        message = """Menu Tumbuh Kembang."""
+        dispatcher.utter_message(text=message)
+
+        return []
     
-    def validate_menu(
-        self,
-        value: Text,
-        dispatcher: CollectingDispatcher,
-        tracker: Tracker,
-        domain: Dict[Text, Any],
-    ) -> Dict[Text, Any]:
-        """Validate num_people value."""
-        
-        if self.is_int(value) and int(value) > 0:
-            return {"menu": value}
-        else:
-            dispatcher.utter_message(Text="salah input")
-            # validation failed, set slot to None
-            return {"menu": None}
+class ActionHandleLainnya(Action):
+
+    def name(self) -> Text:
+        return "action_handle_lainnya"
+
+    def run(self, dispatcher: CollectingDispatcher,
+            tracker: Tracker,
+            domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+        message = """Menu Lainnya."""
+        dispatcher.utter_message(text=message)
+
+        return []
 
 class ActionDataBeratbadan(Action):
     def name(self):

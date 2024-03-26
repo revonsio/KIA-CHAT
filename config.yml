@@ -32,8 +32,6 @@ pipeline:
 - name: FallbackClassifier
   threshold: 0.3
   ambiguity_threshold: 0.1
-- name: DucklingEntityExtractor
-  dimensions: ["number"]
 
 # Configuration for Rasa Core.
 # https://rasa.com/docs/rasa/core/policies/

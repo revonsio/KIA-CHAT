@@ -1,0 +1,44 @@
+{
+  "lookup": {
+    "rules": {
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"bot_challenge\"}}]": "utter_iamabot",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"bot_challenge\"}}, {\"prev_action\": {\"action_name\": \"utter_iamabot\"}, \"user\": {\"intent\": \"bot_challenge\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"pamit\"}}]": "utter_pamit",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"pamit\"}}, {\"prev_action\": {\"action_name\": \"utter_pamit\"}, \"user\": {\"intent\": \"pamit\"}}]": "action_listen"
+    },
+    "rule_only_slots": [],
+    "rule_only_loops": [],
+    "rules_for_loop_unhappy_path": {},
+    "rules_not_in_stories": [
+      "predicting default action with intent restart",
+      "handling active loops and forms - checklistthird_form - action_listen",
+      "handling active loops and forms - checklisteighth_form - action_listen",
+      "handling active loops and forms - beratbadan_form - action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"bot_challenge\"}}, {\"prev_action\": {\"action_name\": \"utter_iamabot\"}, \"user\": {\"intent\": \"bot_challenge\"}}]",
+      "handling active loops and forms - checklistfourth_form",
+      "handling active loops and forms - checklistninth_form - action_listen",
+      "handling active loops and forms - checklistseventh_form",
+      "handling active loops and forms - checklistseventh_form - action_listen",
+      "predicting default action with intent session_start",
+      "predicting default action with intent back",
+      "handling active loops and forms - checklistfifth_form - action_listen",
+      "handling active loops and forms - beratbadan_form",
+      "handling active loops and forms - checklisttenth_form - action_listen",
+      "handling active loops and forms - checklistfirst_form - action_listen",
+      "handling active loops and forms - checklistsixth_form",
+      "handling active loops and forms - checklistsecond_form - action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"pamit\"}}, {\"prev_action\": {\"action_name\": \"utter_pamit\"}, \"user\": {\"intent\": \"pamit\"}}]",
+      "handling active loops and forms - checklistninth_form",
+      "handling active loops and forms - checklistfourth_form - action_listen",
+      "handling active loops and forms - checklistfifth_form",
+      "handling active loops and forms - checklistthird_form",
+      "handling active loops and forms - checklistsixth_form - action_listen",
+      "handling active loops and forms - checklisteighth_form",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"bot_challenge\"}}]",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"pamit\"}}]",
+      "handling active loops and forms - checklistfirst_form",
+      "handling active loops and forms - checklistsecond_form",
+      "handling active loops and forms - checklisttenth_form"
+    ]
+  }
+}

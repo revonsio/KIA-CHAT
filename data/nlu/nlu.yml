@@ -41,35 +41,30 @@ nlu:
 - intent: menu_bb
   examples: |
     - 1
+    - bb
     - a
     - a.
-    - bb
-    - berat badan
 
 - intent: menu_tb
   examples: |
     - 2
+    - tb
     - b
     - b.
-    - tb
-    - tinggi badan
 
 - intent: menu_tk
   examples: |
     - 3
+    - tk
     - c
     - c.
-    - tk
-    - tumbuh kembang
 
 - intent: menu_lainnya
   examples: |
     - 4
+    - lainnya
     - d
     - d.
-    - lainnya
-    - lain-lain
-    - pertanyaan lainnya
 
 - intent: laki_laki
   examples: |
@@ -109,20 +104,10 @@ nlu:
 
 - intent: inform
   examples: |
-    - menu nomor 1
-    - menu nomor 2
-    - menu nomor 3
-    - menu nomor 4
-    - nomor 1
-    - nomor 2
-    - nomor 3
-    - nomor 4
-    - 1
-    - 2
-    - 3
-    - 4
-    
-
+    - [1](option)
+    - [2](option)
+    - [3](option)
+    - [4](option)
 
 - intent: inform_umur
   examples: |

@@ -5,8 +5,9 @@ stories:
   steps:
   - intent: greet
   - action: utter_ask_user_question
-  - action: welcome_form
-  - action: utter_slots_valuewelcome
+  - action: utter_ask_menu
+  - intent: inform
+  - action: action_feedback_welcome
   - action: action_restart
 
 

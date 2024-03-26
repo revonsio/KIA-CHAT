@@ -5,12 +5,12 @@ stories:
   steps:
   - intent: menu_tk
   - action: utter_welcome_menu_tk
-  - checkpoint: menu_tk
+  - checkpoint: menu_tk_cp
   
 # stimulus
 - story: stimulus umur 0 hari - 3 bulan
   steps:
-  - checkpoint: menu_tk
+  - checkpoint: menu_tk_cp
   - intent: stimulus
   - action: utter_ask_umur_tk
   - intent: umur_0hari_3bulan
@@ -18,7 +18,7 @@ stories:
 
 - story: stimulus umur 3 - 6 bulan
   steps:
-  - checkpoint: menu_tk
+  - checkpoint: menu_tk_cp
   - intent: stimulus
   - action: utter_ask_umur_tk
   - intent: umur_3_6bulan
@@ -26,7 +26,7 @@ stories:
 
 - story: stimulus umur 6 - 9 bulan
   steps:
-  - checkpoint: menu_tk
+  - checkpoint: menu_tk_cp
   - intent: stimulus
   - action: utter_ask_umur_tk
   - intent: umur_6_9bulan
@@ -34,7 +34,7 @@ stories:
 
 - story: stimulus umur 9 - 12 bulan
   steps:
-  - checkpoint: menu_tk
+  - checkpoint: menu_tk_cp
   - intent: stimulus
   - action: utter_ask_umur_tk
   - intent: umur_9_12bulan
@@ -42,7 +42,7 @@ stories:
   
 - story: stimulus umur 12 - 18 bulan
   steps:
-  - checkpoint: menu_tk
+  - checkpoint: menu_tk_cp
   - intent: stimulus
   - action: utter_ask_umur_tk
   - intent: umur_12_18bulan
@@ -50,7 +50,7 @@ stories:
 
 - story: stimulus umur 18 - 24 bulan
   steps:
-  - checkpoint: menu_tk
+  - checkpoint: menu_tk_cp
   - intent: stimulus
   - action: utter_ask_umur_tk
   - intent: umur_18_24bulan
@@ -58,7 +58,7 @@ stories:
 
 - story: stimulus umur 2 - 3 tahun
   steps:
-  - checkpoint: menu_tk
+  - checkpoint: menu_tk_cp
   - intent: stimulus
   - action: utter_ask_umur_tk
   - intent: umur_2_3tahun
@@ -66,7 +66,7 @@ stories:
 
 - story: stimulus umur 3 - 4 tahun
   steps:
-  - checkpoint: menu_tk
+  - checkpoint: menu_tk_cp
   - intent: stimulus
   - action: utter_ask_umur_tk
   - intent: umur_3_4tahun
@@ -74,7 +74,7 @@ stories:
 
 - story: stimulus umur 4 - 5 tahun
   steps:
-  - checkpoint: menu_tk
+  - checkpoint: menu_tk_cp
   - intent: stimulus
   - action: utter_ask_umur_tk
   - intent: umur_4_5tahun
@@ -82,7 +82,7 @@ stories:
 
 - story: stimulus umur 5 - 6 tahun
   steps:
-  - checkpoint: menu_tk
+  - checkpoint: menu_tk_cp
   - intent: stimulus
   - action: utter_ask_umur_tk
   - intent: umur_5_6tahun
@@ -91,7 +91,7 @@ stories:
 # checklist
 - story: checklist kpsp 3 bulan
   steps:
-  - checkpoint: menu_tk
+  - checkpoint: menu_tk_cp
   - intent: kpsp
   - action: utter_ask_kategori_kpsp
   - intent: kpsp_3bulan
@@ -103,7 +103,7 @@ stories:
 
 - story: checklist kpsp 6 bulan
   steps:
-  - checkpoint: menu_tk
+  - checkpoint: menu_tk_cp
   - intent: kpsp
   - action: utter_ask_kategori_kpsp
   - intent: kpsp_6bulan
@@ -115,7 +115,7 @@ stories:
 
 - story: checklist kpsp 9 bulan
   steps:
-  - checkpoint: menu_tk
+  - checkpoint: menu_tk_cp
   - intent: kpsp
   - action: utter_ask_kategori_kpsp
   - intent: kpsp_9bulan
@@ -126,7 +126,7 @@ stories:
 
 - story: checklist kpsp 12 bulan
   steps:
-  - checkpoint: menu_tk
+  - checkpoint: menu_tk_cp
   - intent: kpsp
   - action: utter_ask_kategori_kpsp
   - intent: kpsp_12bulan
@@ -137,7 +137,7 @@ stories:
 
 - story: checklist kpsp 15 bulan
   steps:
-  - checkpoint: menu_tk
+  - checkpoint: menu_tk_cp
   - intent: kpsp
   - action: utter_ask_kategori_kpsp
   - intent: kpsp_15bulan
@@ -148,7 +148,7 @@ stories:
 
 - story: checklist kpsp 18 bulan
   steps:
-  - checkpoint: menu_tk
+  - checkpoint: menu_tk_cp
   - intent: kpsp
   - action: utter_ask_kategori_kpsp
   - intent: kpsp_18bulan
@@ -159,7 +159,7 @@ stories:
 
 - story: checklist kpsp 21 bulan
   steps:
-  - checkpoint: menu_tk
+  - checkpoint: menu_tk_cp
   - intent: kpsp
   - action: utter_ask_kategori_kpsp
   - intent: kpsp_21bulan
@@ -170,7 +170,7 @@ stories:
 
 - story: checklist kpsp 24 bulan
   steps:
-  - checkpoint: menu_tk
+  - checkpoint: menu_tk_cp
   - intent: kpsp
   - action: utter_ask_kategori_kpsp
   - intent: kpsp_24bulan
@@ -181,7 +181,7 @@ stories:
 
 - story: checklist kpsp 30 bulan
   steps:
-  - checkpoint: menu_tk
+  - checkpoint: menu_tk_cp
   - intent: kpsp
   - action: utter_ask_kategori_kpsp
   - intent: kpsp_30bulan
@@ -192,7 +192,7 @@ stories:
 
 - story: checklist kpsp 36 bulan
   steps:
-  - checkpoint: menu_tk
+  - checkpoint: menu_tk_cp
   - intent: kpsp
   - action: utter_ask_kategori_kpsp
   - intent: kpsp_36bulan

@@ -12,6 +12,8 @@ nlu:
     - kegiatan apa yang cocok untuk membantu perkembangan anak 
     - simulus yang berhubungan dengan tumbuh kembang anak
     - bagaimana cara melatih tumbuh kembang 
+    - a
+    - a.
 
 - intent: kpsp
   examples: |
@@ -21,96 +23,94 @@ nlu:
     - kuesioner
     - kuisioner
     - cek
+    - b
+    - b.
 
 # intent umur
 - intent: umur_0hari_3bulan
   examples: |
-    - a
-    - a. 
+    - tes
+    - tes
 
 - intent: umur_3_6bulan
   examples: |
-    - b
-    - b.
+    - tes
+    - tes
 
 - intent: umur_6_9bulan
   examples: |
-    - c
-    - c.
+    - tes
+    - tes
 
 - intent: umur_9_12bulan
   examples: |
-    - d
-    - d.
+    - tes
+    - tes
 
 - intent: umur_12_18bulan
   examples: |
-    - e
-    - e.
+    - tes
+    - tes
 
 - intent: umur_18_24bulan
   examples: |
-    - f
-    - f.
+    - tes
+    - tes
 
 - intent: umur_2_3tahun
   examples: |
-    - g
-    - g.
+    - tes
+    - tes
 
 - intent: umur_3_4tahun
   examples: |
-    - h
-    - h.
+    - tes
+    - tes
 
 - intent: umur_4_5tahun
   examples: |
-    - i
-    - i.
+    - tes
+    - tes
 
 - intent: umur_5_6tahun
   examples: |
-    - j
-    - j.
+    - tes
+    - tes
 
 - intent: kpsp_3bulan
   examples: |
-    - a
-    - a. 
+    - tes
+    - tes 
   
 - intent: kpsp_6bulan
   examples: |
-    - b
-    - b.
+    - tes
+    - tes
   
 - intent: kpsp_9bulan
   examples: |
-    - c
-    - c.
+    - tes
+    - tes
   
 - intent: kpsp_12bulan
   examples: |
-    - d
-    - d.
+    - tes
+    - tes
 
 - intent: kpsp_15bulan
   examples: |
-    - e
-    - e.
+    - tes
+    - tes
 
 - intent: kpsp_18bulan
   examples: |
-    - f
-    - f.
+    - tes
+    - tes
 
 - intent: kpsp_21bulan
   examples: |
-    - kpsp 21 bulan
-    - 21 bulan
-    - 22 bulan
-    - 23 bulan
-    - g
-    - g.
+    - tes
+    - tes
 
 - intent: kpsp_24bulan
   examples: |

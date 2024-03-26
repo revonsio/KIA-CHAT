@@ -1,329 +1,276 @@
-version: "3.1"
-
+version: '3.1'
 intents:
-  - greet
-  - pamit
-  - menu_bb
-  - menu_tb
-  - menu_tk
-  - menu_lainnya
-  - laki_laki
-  - perempuan
-  - inform
-  - inform_umur
-  - inform_bb
-  - bot_challenge
-
-  # menu tumbuh kembang
-  - stimulus
-  - kpsp
-  - affirm
-  - deny
-  - umur_0hari_3bulan
-  - umur_3_6bulan
-  - umur_6_9bulan
-  - umur_9_12bulan
-  - umur_12_18bulan
-  - umur_18_24bulan
-  - umur_2_3tahun
-  - umur_3_4tahun
-  - umur_4_5tahun
-  - umur_5_6tahun
-  - kpsp_3bulan
-  - kpsp_6bulan
-  - kpsp_9bulan
-  - kpsp_12bulan
-  - kpsp_15bulan
-  - kpsp_18bulan
-  - kpsp_21bulan
-  - kpsp_24bulan
-  - kpsp_30bulan
-  - kpsp_36bulan
-  - kpsp_42bulan
-  - kpsp_48bulan
-  - kpsp_54bulan
-
-  # menu checklist
-  - setuju
-
-  #menu lainnya
-  - manfaat_menyanyikan_lagu
-
+- affirm
+- bot_challenge
+- deny
+- greet
+- inform
+- inform_bb
+- inform_umur
+- kpsp
+- kpsp_12bulan
+- kpsp_15bulan
+- kpsp_18bulan
+- kpsp_21bulan
+- kpsp_24bulan
+- kpsp_30bulan
+- kpsp_36bulan
+- kpsp_3bulan
+- kpsp_42bulan
+- kpsp_48bulan
+- kpsp_54bulan
+- kpsp_6bulan
+- kpsp_9bulan
+- laki_laki
+- manfaat_menyanyikan_lagu
+- menu_bb
+- menu_lainnya
+- menu_tb
+- menu_tk
+- pamit
+- perempuan
+- setuju
+- stimulus
+- umur_0hari_3bulan
+- umur_12_18bulan
+- umur_18_24bulan
+- umur_2_3tahun
+- umur_3_4tahun
+- umur_3_6bulan
+- umur_4_5tahun
+- umur_5_6tahun
+- umur_6_9bulan
+- umur_9_12bulan
 entities:
-  - umur
-  - berat_badan
-  - number
-  
-
+- umur
+- berat_badan
+- option
 actions:
-  - action_data_beratbadan
-  - action_feedback_checklistfirst
-  - action_feedback_checklistsecond
-  - validate_welcome_form
-
+- action_feedback_welcome
+- action_handle_berat_badan
+- action_handle_tinggi_badan
+- action_handle_tumbuh_kembang
+- action_handle_lainnya
+- action_data_beratbadan
+- action_feedback_checklistfirst
+- action_feedback_checklistsecond
 forms:
-  welcome_form:
-    required_slots:
-      - menu
-
   beratbadan_form:
     required_slots:
-      - jenis_kelamin
-      - umur
-      - berat_badan
-  
+    - jenis_kelamin
+    - umur
+    - berat_badan
   checklistfirst_form:
     required_slots:
-      - question11
-      - question12
-      - question13
-      - question14
-      - question15
-      - question16
-      - question17
-      - question18
-      - question19
-      - question110
-
+    - question11
+    - question12
+    - question13
+    - question14
+    - question15
+    - question16
+    - question17
+    - question18
+    - question19
+    - question110
   checklistsecond_form:
     required_slots:
-      - question21
-      - question22
-      - question23
-      - question24
-      - question25
-      - question26
-      - question27
-      - question28
-      - question29
-      - question210
-  
+    - question21
+    - question22
+    - question23
+    - question24
+    - question25
+    - question26
+    - question27
+    - question28
+    - question29
+    - question210
   checklistthird_form:
     required_slots:
-      - question31
-      - question32
-      - question33
-      - question34
-      - question35
-      - question36
-      - question37
-      - question38
-      - question39
-      - question310
-      - question311
-  
+    - question31
+    - question32
+    - question33
+    - question34
+    - question35
+    - question36
+    - question37
+    - question38
+    - question39
+    - question310
+    - question311
   checklistfourth_form:
     required_slots:
-      - question41
-      - question42
-      - question43
-      - question44
-      - question45
-      - question46
-      - question47
-      - question48
-      - question49
-      - question410
-      - question411
-      - question412
-  
+    - question41
+    - question42
+    - question43
+    - question44
+    - question45
+    - question46
+    - question47
+    - question48
+    - question49
+    - question410
+    - question411
+    - question412
   checklistfifth_form:
     required_slots:
-      - question51
-      - question52
-      - question53
-      - question54
-      - question55
-      - question56
-      - question57
-      - question58
-  
+    - question51
+    - question52
+    - question53
+    - question54
+    - question55
+    - question56
+    - question57
+    - question58
   checklistsixth_form:
     required_slots:
-      - question61
-      - question62
-      - question63
-      - question64
-      - question65
-      - question66
-      - question67
-      - question68
-
+    - question61
+    - question62
+    - question63
+    - question64
+    - question65
+    - question66
+    - question67
+    - question68
   checklistseventh_form:
     required_slots:
-      - question71
-      - question72
-      - question73
-      - question74
-      - question75
-      - question76
-      - question77
-      - question78
-      - question79
-
+    - question71
+    - question72
+    - question73
+    - question74
+    - question75
+    - question76
+    - question77
+    - question78
+    - question79
   checklisteighth_form:
     required_slots:
-      - question81
-      - question82
-      - question83
-      - question84
-      - question85
-      - question86
-      - question87
-      - question88
-      - question89
-      - question810
-      - question811
-      - question812
-      - question813
-  
+    - question81
+    - question82
+    - question83
+    - question84
+    - question85
+    - question86
+    - question87
+    - question88
+    - question89
+    - question810
+    - question811
+    - question812
+    - question813
   checklistninth_form:
     required_slots:
-      - question91
-      - question92
-      - question93
-      - question94
-      - question95
-      - question96
-      - question97
-      - question98
-      - question99
-      - question910
-      - question911
-      - question912
-      - question913
-      - question914
-      - question915
-      - question916
-      - question917
-      - question918
-  
+    - question91
+    - question92
+    - question93
+    - question94
+    - question95
+    - question96
+    - question97
+    - question98
+    - question99
+    - question910
+    - question911
+    - question912
+    - question913
+    - question914
+    - question915
+    - question916
+    - question917
+    - question918
   checklisttenth_form:
     required_slots:
-      - question101
-      - question102
-      - question103
-      - question104
-      - question105
-      - question106
-      - question107
-      - question108
-      - question109
-      - question1010
-      - question1011
-      - question1012
-      - question1013
+    - question101
+    - question102
+    - question103
+    - question104
+    - question105
+    - question106
+    - question107
+    - question108
+    - question109
+    - question1010
+    - question1011
+    - question1012
+    - question1013
 
 responses:
-  utter_slots_valuewelcome:
-  - text: "Input Anda: {menu}"
-  
   utter_ask_user_question:
-  - text: "Halo! Selamat datang di KIA CHAT, bot yang membantu Anda memperoleh informasi seputar tumbuh kembang Anak. \n"
-
+  - text: "Halo! Selamat datang di KIA CHAT, bot yang membantu Anda memperoleh informasi seputar tumbuh kembang Anak."
+       
   utter_ask_menu:
-  - text: "Topik apa yang ingin Anda tanyakan? \n
-  1. Berat Badan \n
-  2. Tinggi Badan \n
-  3. Tumbuh Kembang \n
-  4. Lainnya \n
-  "
-
+  - text: 
+      "Topik apa yang ingin Anda tanyakan? \n
+       1. Berat Badan \n
+       2. Tinggi Badan \n
+       3. Tumbuh Kembang \n
+       4. Lainnya\n "
+       
   utter_iamabot:
   - text: "Halo! Saya adalah KIA CHAT. Saya adalah bot yang akan memberikan informasi terkait perkembangan anak balita, mulai dari lahir hingga usia kurang dari 6 tahun. Topik informasi yang dapat saya berikan kepada Anda meliputi kemandirian, kemampuan berbahsa, motorik kasar, dan motorik halus."
-
   utter_pamit:
   - text: "Terima kasih telah menggunakan layanan KIA CHAT, sampai jumpa lagi!"
-
-# TOPIK BERAT BADAN
   utter_ask_jenis_kelamin:
   - text: "Apa jenis kelamin anak Anda?"
-
   utter_ask_umur:
   - text: "Berapa umur anak Anda saat ini?"
-
   utter_ask_berat_badan:
   - text: "Berapa berat badan anak Anda saat ini?"
 
-# TOPIK TUMBUH KEMBANG
   utter_welcome_menu_tk:
-  - text: "Selamat datang di menu tumbuh kembang anak oleh KIA Chat. Pada bagian ini, saya akan menjawab pertanyaan-pertanyaan Anda seputar tumbuh kembang anak, meliputi: \n"
-    buttons:
-      - title: Stimulus
-        payload: /stimulus
-      - title: KPSP (Kuesioner Pra Skrining Perkembangan)
-        payload: /kpsp
-
+  - text:
+      "Selamat datang di menu tumbuh kembang anak oleh KIA Chat. Pada bagian ini, saya akan menjawab pertanyaan-pertanyaan Anda seputar tumbuh kembang anak, meliputi: \n
+       a. Stimulus \n
+       b. KPSP (Kuesioner Pra Skrining Perkembangan)\n "
+       
   utter_welcome_menu_tk_checklist:
-  - text: "Baik, pada bagian ini, saya akan memberikan beberapa pertanyaan assessment untuk menguji tumbuh kembang anak Anda dengan menjawab 'Ya' atau 'Tidak'."
+  - text: " Baik, pada bagian ini, saya akan memberikan beberapa pertanyaan assessment untuk menguji tumbuh kembang anak Anda dengan menjawab 'Ya' atau 'Tidak'."
 
   utter_ask_umur_tk:
-  - text: "Berapa umur anak Anda saat ini? \n"
-    buttons:
-    - title: 0 - 3 bulan
-      payload: /umur_0hari_3bulan
-    - title: 3 - 6 bulan
-      payload: /umur_3_6bulan
-    - title: 6 - 9 bulan
-      payload: /umur_6_9bulan
-    - title: 9 - 12 bulan
-      payload: /umur_9_12bulan
-    - title: 12 - 18 bulan
-      payload: /umur_12_18bulan
-    - title: 18 - 24 bulan
-      payload: /umur_18_24bulan
-    - title: 2 - 3 tahun
-      payload: /umur_2_3tahun
-    - title: 3 - 4 bulan
-      payload: /umur_3_4tahun
-    - title: 4 - 5 bulan
-      payload: /umur_4_5tahun
-    - title: 5 - 6 bulan
-      payload: /umur_5_6tahun
-
+  - text: 
+      "Berapa umur anak Anda saat ini? \n
+       a. 0 - 3 bulan \n
+       b. 3 - 6 bulan \n
+       c. 6 - 9 bulan \n
+       d. 9 - 12 bulan \n
+       e. 12 - 18 bulan \n
+       f. 18 - 24 bulan \n
+       g. 2 - 3 tahun \n
+       h. 3 - 4 tahun \n
+       i. 4 - 5 tahun \n
+       j. 5 - 6 tahun \n"
+       
   utter_ask_kategori_kpsp:
-  - text: "Pilih Kategori KPSP: \n"
-    buttons:
-    - title: KPSP 3 bulan
-      payload: /kpsp_3bulan
-    - title: KPSP 6 bulan
-      payload: /kpsp_6bulan
-    - title: KPSP 9 bulan
-      payload: /kpsp_9bulan
-    - title: KPSP 12 bulan
-      payload: /kpsp_12bulan
-    - title: KPSP 15 bulan
-      payload: /kpsp_15bulan
-    - title: KPSP 18 bulan
-      payload: /kpsp_18bulan
-    - title: KPSP 21 bulan
-      payload: /kpsp_21bulan
-    - title: KPSP 24 bulan
-      payload: /kpsp_24bulan
-    - title: KPSP 30 bulan
-      payload: /kpsp_30bulan
-    - title: KPSP 36 bulan
-      payload: /kpsp_36bulan
-    - title: KPSP 42 bulan
-      payload: /kpsp_42bulan
-    - title: KPSP 48 bulan
-      payload: /kpsp_48bulan
-    - title: KPSP 54 bulan
-      payload: /kpsp_54bulan
-
-  # TOPIK LAINNYA
+  - text: 
+      "Pilih Kategori KPSP: \n
+       a. KPSP 3 bulan \n
+       b. KPSP 6 bulan \n
+       c. KPSP 9 bulan \n
+       d. KPSP 12 bulan \n
+       e. KPSP 15 bulan \n
+       f. KPSP 18 bulan \n
+       g. KPSP 21 bulan \n
+       h. KPSP 24 bulan \n
+       i. KPSP 30 bulan \n
+       j. KPSP 36 bulan \n
+       k. KPSP 42 bulan \n
+       l. KPSP 48 bulan \n
+       m. KPSP 54 bulan \n
+       "
   utter_welcome_menu_lainnya:
   - text: "Selamat datang di menu pertanyaan umum terkait tumbuh kembang anak oleh KIA Chat. Pada bagian ini, saya akan menjawab pertanyaan-pertanyaan Anda seputar tumbuh kembang anak. Silakan ketik pertanyaan Anda."
-
-  
+       
 slots:
-  menu:
-    type: float
-    influence_conversation: false
+  option:
+    type: text
     mappings:
     - type: from_entity
-      entity: number
-      intent: inform
+      entity: option
+  submenu: 
+    type: text
+    initial_value: "main"
+    influence_conversation: false
+    mappings:
+    - type: custom
   jenis_kelamin:
     type: bool
     mappings:
@@ -354,8 +301,6 @@ slots:
     - type: from_entity
       entity: berat_badan
       intent: inform_bb
-
-  # Checklist First Slots
   question11:
     type: bool
     mappings:
@@ -516,8 +461,6 @@ slots:
       - active_loop: checklistfirst_form
         requested_slot: question110
     influence_conversation: false
-
-  # Checklist Second Slots
   question21:
     type: bool
     mappings:
@@ -678,7 +621,6 @@ slots:
       - active_loop: checklistsecond_form
         requested_slot: question210
     influence_conversation: false
-  # Checklist Third Slots
   question31:
     type: bool
     mappings:
@@ -855,8 +797,6 @@ slots:
       - active_loop: checklistthird_form
         requested_slot: question311
     influence_conversation: false
-
-  # Checklist Fourth Slots
   question41:
     type: bool
     mappings:
@@ -1049,8 +989,6 @@ slots:
       - active_loop: checklistfourth_form
         requested_slot: question312
     influence_conversation: false
-
-  # Checklist fifth Slots
   question51:
     type: bool
     mappings:
@@ -1179,8 +1117,6 @@ slots:
       - active_loop: checklistfifth_form
         requested_slot: question58
     influence_conversation: false
-
-  # Checklist Sixth Slots
   question61:
     type: bool
     mappings:
@@ -1309,8 +1245,6 @@ slots:
       - active_loop: checklistsixth_form
         requested_slot: question68
     influence_conversation: false
-
-  # Checklist Seventh Slots
   question71:
     type: bool
     mappings:
@@ -1455,8 +1389,6 @@ slots:
       - active_loop: checklistseventh_form
         requested_slot: question79
     influence_conversation: false
-
-  # Checklist Eighth Slots
   question81:
     type: bool
     mappings:
@@ -1665,8 +1597,6 @@ slots:
       - active_loop: checklisteighth_form
         requested_slot: question813
     influence_conversation: false
-
-  # Checklist Ninth Slots
   question91:
     type: bool
     mappings:
@@ -1955,8 +1885,6 @@ slots:
       - active_loop: checklistninth_form
         requested_slot: question918
     influence_conversation: false
-
-  # Checklist Tent Slots
   question101:
     type: bool
     mappings:
@@ -2165,10 +2093,6 @@ slots:
       - active_loop: checklisttenth_form
         requested_slot: question1013
     influence_conversation: false
-  
-
-
-
 session_config:
   session_expiration_time: 60
   carry_over_slots_to_new_session: true
