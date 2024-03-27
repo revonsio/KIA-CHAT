@@ -219,8 +219,8 @@ responses:
   utter_welcome_menu_tk:
   - text:
       "Selamat datang di menu tumbuh kembang anak oleh KIA Chat. Pada bagian ini, saya akan menjawab pertanyaan-pertanyaan Anda seputar tumbuh kembang anak, meliputi: \n
-       a. Stimulus \n
-       b. KPSP (Kuesioner Pra Skrining Perkembangan)\n "
+       1. Stimulus \n
+       2. KPSP (Kuesioner Pra Skrining Perkembangan)\n "
        
   utter_welcome_menu_tk_checklist:
   - text: " Baik, pada bagian ini, saya akan memberikan beberapa pertanyaan assessment untuk menguji tumbuh kembang anak Anda dengan menjawab 'Ya' atau 'Tidak'."

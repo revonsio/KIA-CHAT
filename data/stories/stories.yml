@@ -1,5 +1,5 @@
-version: "3.1"
 
+version: "3.1"
 stories:
 - story: start chatbot
   steps:
@@ -9,22 +9,3 @@ stories:
   - intent: inform
   - action: action_feedback_welcome
   - action: action_restart
-
-
-
-# - story: topik tinggi badan
-#   steps:
-#   - intent: greet
-#   - action: utter_greet
-#   - intent: menu_tb
-#   - action: utter_tanya_umur
-  
-
-  
-
-# - story: topik lainnya
-#   steps:
-#   - intent: greet
-#   - action: utter_greet
-#   - intent: menu_lainnya
-#   - action: utter_tanya_umur
